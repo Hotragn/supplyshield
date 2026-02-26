@@ -1,0 +1,642 @@
+[
+  {
+    "supplier_id": "SUP-SZ-001",
+    "supplier_name": "Shenzhen Microtech Components",
+    "region": "East Asia",
+    "country": "China",
+    "origin_port": "Shenzhen",
+    "capabilities": [
+      "microcontrollers",
+      "system-on-chip",
+      "pcb-assemblies"
+    ],
+    "reliability_score": 88.5,
+    "capacity_score": 92.0,
+    "lead_time_days": 14,
+    "active": true,
+    "location": {
+      "lat": 22.5329,
+      "lon": 113.9283
+    }
+  },
+  {
+    "supplier_id": "SUP-SZ-002",
+    "supplier_name": "GreenCell Battery Shenzhen",
+    "region": "East Asia",
+    "country": "China",
+    "origin_port": "Shenzhen",
+    "capabilities": [
+      "battery-cells",
+      "lithium-ion-packs",
+      "battery-management"
+    ],
+    "reliability_score": 85.0,
+    "capacity_score": 88.0,
+    "lead_time_days": 16,
+    "active": true,
+    "location": {
+      "lat": 22.546,
+      "lon": 113.9155
+    }
+  },
+  {
+    "supplier_id": "SUP-SZ-003",
+    "supplier_name": "Shenzhen Optolink Displays",
+    "region": "East Asia",
+    "country": "China",
+    "origin_port": "Shenzhen",
+    "capabilities": [
+      "oled-displays",
+      "lcd-panels",
+      "touch-sensors"
+    ],
+    "reliability_score": 82.0,
+    "capacity_score": 79.0,
+    "lead_time_days": 18,
+    "active": true,
+    "location": {
+      "lat": 22.52,
+      "lon": 113.91
+    }
+  },
+  {
+    "supplier_id": "SUP-VN-001",
+    "supplier_name": "Viet Components Manufacturing",
+    "region": "Southeast Asia",
+    "country": "Vietnam",
+    "origin_port": "Ho Chi Minh City",
+    "capabilities": [
+      "microcontrollers",
+      "pcb-assemblies",
+      "system-on-chip"
+    ],
+    "reliability_score": 84.0,
+    "capacity_score": 86.0,
+    "lead_time_days": 18,
+    "active": true,
+    "location": {
+      "lat": 10.8231,
+      "lon": 106.6297
+    }
+  },
+  {
+    "supplier_id": "SUP-MY-001",
+    "supplier_name": "Penang TechFab Industries",
+    "region": "Southeast Asia",
+    "country": "Malaysia",
+    "origin_port": "Port Klang",
+    "capabilities": [
+      "microcontrollers",
+      "memory-modules",
+      "pcb-assemblies"
+    ],
+    "reliability_score": 87.0,
+    "capacity_score": 80.0,
+    "lead_time_days": 21,
+    "active": true,
+    "location": {
+      "lat": 5.4141,
+      "lon": 100.3288
+    }
+  },
+  {
+    "supplier_id": "SUP-IN-001",
+    "supplier_name": "Bangalore Precision Electronics",
+    "region": "South Asia",
+    "country": "India",
+    "origin_port": "Chennai",
+    "capabilities": [
+      "battery-cells",
+      "lithium-ion-packs",
+      "power-management"
+    ],
+    "reliability_score": 79.0,
+    "capacity_score": 83.0,
+    "lead_time_days": 24,
+    "active": true,
+    "location": {
+      "lat": 12.9716,
+      "lon": 77.5946
+    }
+  },
+  {
+    "supplier_id": "SUP-TH-001",
+    "supplier_name": "Thai Optics and Display Co",
+    "region": "Southeast Asia",
+    "country": "Thailand",
+    "origin_port": "Laem Chabang",
+    "capabilities": [
+      "oled-displays",
+      "lcd-panels",
+      "touch-sensors"
+    ],
+    "reliability_score": 81.0,
+    "capacity_score": 76.0,
+    "lead_time_days": 20,
+    "active": true,
+    "location": {
+      "lat": 13.7563,
+      "lon": 100.5018
+    }
+  },
+  {
+    "supplier_id": "SUP-VN-002",
+    "supplier_name": "Hanoi ElectroParts Ltd",
+    "region": "Southeast Asia",
+    "country": "Vietnam",
+    "origin_port": "Haiphong",
+    "capabilities": [
+      "battery-cells",
+      "battery-management",
+      "power-management"
+    ],
+    "reliability_score": 76.0,
+    "capacity_score": 81.0,
+    "lead_time_days": 22,
+    "active": true,
+    "location": {
+      "lat": 21.0285,
+      "lon": 105.8542
+    }
+  },
+  {
+    "supplier_id": "SUP-TW-001",
+    "supplier_name": "Taiwan Semiconductor Supply",
+    "region": "East Asia",
+    "country": "Taiwan",
+    "origin_port": "Kaohsiung",
+    "capabilities": [
+      "memory-modules",
+      "flash-storage",
+      "dram"
+    ],
+    "reliability_score": 91.0,
+    "capacity_score": 88.0,
+    "lead_time_days": 16,
+    "active": true,
+    "location": {
+      "lat": 22.6273,
+      "lon": 120.3014
+    }
+  },
+  {
+    "supplier_id": "SUP-TW-002",
+    "supplier_name": "Taipei Circuit Works",
+    "region": "East Asia",
+    "country": "Taiwan",
+    "origin_port": "Keelung",
+    "capabilities": [
+      "pcb-assemblies",
+      "memory-modules"
+    ],
+    "reliability_score": 89.0,
+    "capacity_score": 85.0,
+    "lead_time_days": 14,
+    "active": true,
+    "location": {
+      "lat": 25.1276,
+      "lon": 121.7392
+    }
+  },
+  {
+    "supplier_id": "SUP-KR-001",
+    "supplier_name": "Seoul Display Technologies",
+    "region": "East Asia",
+    "country": "South Korea",
+    "origin_port": "Busan",
+    "capabilities": [
+      "oled-displays",
+      "amoled-panels"
+    ],
+    "reliability_score": 93.0,
+    "capacity_score": 90.0,
+    "lead_time_days": 12,
+    "active": true,
+    "location": {
+      "lat": 37.5665,
+      "lon": 126.978
+    }
+  },
+  {
+    "supplier_id": "SUP-KR-002",
+    "supplier_name": "Incheon Battery Systems",
+    "region": "East Asia",
+    "country": "South Korea",
+    "origin_port": "Incheon",
+    "capabilities": [
+      "battery-cells",
+      "lithium-ion-packs"
+    ],
+    "reliability_score": 90.0,
+    "capacity_score": 87.0,
+    "lead_time_days": 13,
+    "active": true,
+    "location": {
+      "lat": 37.4563,
+      "lon": 126.7052
+    }
+  },
+  {
+    "supplier_id": "SUP-JP-001",
+    "supplier_name": "Osaka Precision Parts",
+    "region": "East Asia",
+    "country": "Japan",
+    "origin_port": "Osaka",
+    "capabilities": [
+      "microcontrollers",
+      "sensors"
+    ],
+    "reliability_score": 95.0,
+    "capacity_score": 82.0,
+    "lead_time_days": 11,
+    "active": true,
+    "location": {
+      "lat": 34.6937,
+      "lon": 135.5023
+    }
+  },
+  {
+    "supplier_id": "SUP-JP-002",
+    "supplier_name": "Tokyo Electronic Materials",
+    "region": "East Asia",
+    "country": "Japan",
+    "origin_port": "Yokohama",
+    "capabilities": [
+      "rare-earth-magnets",
+      "sensors"
+    ],
+    "reliability_score": 94.0,
+    "capacity_score": 78.0,
+    "lead_time_days": 10,
+    "active": true,
+    "location": {
+      "lat": 35.6762,
+      "lon": 139.6503
+    }
+  },
+  {
+    "supplier_id": "SUP-ID-001",
+    "supplier_name": "Jakarta Industrial Parts",
+    "region": "Southeast Asia",
+    "country": "Indonesia",
+    "origin_port": "Tanjung Priok",
+    "capabilities": [
+      "pcb-assemblies",
+      "plastic-housings"
+    ],
+    "reliability_score": 72.0,
+    "capacity_score": 88.0,
+    "lead_time_days": 25,
+    "active": true,
+    "location": {
+      "lat": -6.2088,
+      "lon": 106.8456
+    }
+  },
+  {
+    "supplier_id": "SUP-PH-001",
+    "supplier_name": "Manila Electronics Assembly",
+    "region": "Southeast Asia",
+    "country": "Philippines",
+    "origin_port": "Manila",
+    "capabilities": [
+      "pcb-assemblies",
+      "cable-harnesses"
+    ],
+    "reliability_score": 74.0,
+    "capacity_score": 84.0,
+    "lead_time_days": 22,
+    "active": true,
+    "location": {
+      "lat": 14.5995,
+      "lon": 120.9842
+    }
+  },
+  {
+    "supplier_id": "SUP-MX-001",
+    "supplier_name": "Monterrey TechAssembly",
+    "region": "North America",
+    "country": "Mexico",
+    "origin_port": "Manzanillo",
+    "capabilities": [
+      "pcb-assemblies",
+      "plastic-housings",
+      "cable-harnesses"
+    ],
+    "reliability_score": 83.0,
+    "capacity_score": 91.0,
+    "lead_time_days": 8,
+    "active": true,
+    "location": {
+      "lat": 25.6866,
+      "lon": -100.3161
+    }
+  },
+  {
+    "supplier_id": "SUP-MX-002",
+    "supplier_name": "Tijuana Precision Mfg",
+    "region": "North America",
+    "country": "Mexico",
+    "origin_port": "Ensenada",
+    "capabilities": [
+      "microcontrollers",
+      "pcb-assemblies"
+    ],
+    "reliability_score": 80.0,
+    "capacity_score": 86.0,
+    "lead_time_days": 9,
+    "active": true,
+    "location": {
+      "lat": 32.5149,
+      "lon": -117.0382
+    }
+  },
+  {
+    "supplier_id": "SUP-PL-001",
+    "supplier_name": "Wroclaw Electronics GmbH",
+    "region": "Europe",
+    "country": "Poland",
+    "origin_port": "Gdansk",
+    "capabilities": [
+      "microcontrollers",
+      "pcb-assemblies"
+    ],
+    "reliability_score": 88.0,
+    "capacity_score": 80.0,
+    "lead_time_days": 7,
+    "active": true,
+    "location": {
+      "lat": 51.1079,
+      "lon": 17.0385
+    }
+  },
+  {
+    "supplier_id": "SUP-CZ-001",
+    "supplier_name": "Prague Circuit Supplies",
+    "region": "Europe",
+    "country": "Czech Republic",
+    "origin_port": "Hamburg",
+    "capabilities": [
+      "memory-modules",
+      "pcb-assemblies"
+    ],
+    "reliability_score": 87.0,
+    "capacity_score": 77.0,
+    "lead_time_days": 8,
+    "active": true,
+    "location": {
+      "lat": 50.0755,
+      "lon": 14.4378
+    }
+  },
+  {
+    "supplier_id": "SUP-TR-001",
+    "supplier_name": "Istanbul TechParts",
+    "region": "Europe",
+    "country": "Turkey",
+    "origin_port": "Mersin",
+    "capabilities": [
+      "plastic-housings",
+      "cable-harnesses"
+    ],
+    "reliability_score": 75.0,
+    "capacity_score": 82.0,
+    "lead_time_days": 12,
+    "active": true,
+    "location": {
+      "lat": 41.0082,
+      "lon": 28.9784
+    }
+  },
+  {
+    "supplier_id": "SUP-MA-001",
+    "supplier_name": "Casablanca Industrial Electronics",
+    "region": "Africa",
+    "country": "Morocco",
+    "origin_port": "Casablanca",
+    "capabilities": [
+      "cable-harnesses",
+      "plastic-housings"
+    ],
+    "reliability_score": 70.0,
+    "capacity_score": 79.0,
+    "lead_time_days": 14,
+    "active": true,
+    "location": {
+      "lat": 33.5731,
+      "lon": -7.5898
+    }
+  },
+  {
+    "supplier_id": "SUP-SG-001",
+    "supplier_name": "Singapore Logistics Hub",
+    "region": "Southeast Asia",
+    "country": "Singapore",
+    "origin_port": "Singapore",
+    "capabilities": [
+      "logistics",
+      "pcb-assemblies"
+    ],
+    "reliability_score": 96.0,
+    "capacity_score": 75.0,
+    "lead_time_days": 5,
+    "active": true,
+    "location": {
+      "lat": 1.3521,
+      "lon": 103.8198
+    }
+  },
+  {
+    "supplier_id": "SUP-HK-001",
+    "supplier_name": "Hong Kong Components Ltd",
+    "region": "East Asia",
+    "country": "Hong Kong",
+    "origin_port": "Hong Kong",
+    "capabilities": [
+      "microcontrollers",
+      "memory-modules"
+    ],
+    "reliability_score": 89.0,
+    "capacity_score": 73.0,
+    "lead_time_days": 9,
+    "active": true,
+    "location": {
+      "lat": 22.3193,
+      "lon": 114.1694
+    }
+  },
+  {
+    "supplier_id": "SUP-AU-001",
+    "supplier_name": "Sydney Tech Supplies",
+    "region": "Oceania",
+    "country": "Australia",
+    "origin_port": "Sydney",
+    "capabilities": [
+      "sensors",
+      "power-management"
+    ],
+    "reliability_score": 91.0,
+    "capacity_score": 60.0,
+    "lead_time_days": 18,
+    "active": true,
+    "location": {
+      "lat": -33.8688,
+      "lon": 151.2093
+    }
+  },
+  {
+    "supplier_id": "SUP-BR-001",
+    "supplier_name": "Sao Paulo Electronics",
+    "region": "South America",
+    "country": "Brazil",
+    "origin_port": "Santos",
+    "capabilities": [
+      "plastic-housings",
+      "cable-harnesses"
+    ],
+    "reliability_score": 68.0,
+    "capacity_score": 85.0,
+    "lead_time_days": 28,
+    "active": true,
+    "location": {
+      "lat": -23.5505,
+      "lon": -46.6333
+    }
+  },
+  {
+    "supplier_id": "SUP-US-001",
+    "supplier_name": "Texas Semiconductor Supply",
+    "region": "North America",
+    "country": "USA",
+    "origin_port": "Houston",
+    "capabilities": [
+      "microcontrollers",
+      "sensors",
+      "memory-modules"
+    ],
+    "reliability_score": 92.0,
+    "capacity_score": 70.0,
+    "lead_time_days": 6,
+    "active": true,
+    "location": {
+      "lat": 29.7604,
+      "lon": -95.3698
+    }
+  },
+  {
+    "supplier_id": "SUP-DE-001",
+    "supplier_name": "Munich Precision Systems",
+    "region": "Europe",
+    "country": "Germany",
+    "origin_port": "Hamburg",
+    "capabilities": [
+      "sensors",
+      "pcb-assemblies",
+      "power-management"
+    ],
+    "reliability_score": 93.0,
+    "capacity_score": 72.0,
+    "lead_time_days": 7,
+    "active": true,
+    "location": {
+      "lat": 48.1351,
+      "lon": 11.582
+    }
+  },
+  {
+    "supplier_id": "SUP-IN-002",
+    "supplier_name": "Mumbai Component Hub",
+    "region": "South Asia",
+    "country": "India",
+    "origin_port": "JNPT Mumbai",
+    "capabilities": [
+      "plastic-housings",
+      "cable-harnesses",
+      "pcb-assemblies"
+    ],
+    "reliability_score": 73.0,
+    "capacity_score": 88.0,
+    "lead_time_days": 20,
+    "active": true,
+    "location": {
+      "lat": 19.076,
+      "lon": 72.8777
+    }
+  },
+  {
+    "supplier_id": "SUP-KR-003",
+    "supplier_name": "Suwon Advanced Materials",
+    "region": "East Asia",
+    "country": "South Korea",
+    "origin_port": "Busan",
+    "capabilities": [
+      "lcd-panels",
+      "touch-sensors"
+    ],
+    "reliability_score": 88.0,
+    "capacity_score": 83.0,
+    "lead_time_days": 14,
+    "active": true,
+    "location": {
+      "lat": 37.2636,
+      "lon": 127.0286
+    }
+  },
+  {
+    "supplier_id": "SUP-MY-002",
+    "supplier_name": "Johor BahruTech Manufacturing",
+    "region": "Southeast Asia",
+    "country": "Malaysia",
+    "origin_port": "Port of Tanjung Pelepas",
+    "capabilities": [
+      "pcb-assemblies",
+      "plastic-housings"
+    ],
+    "reliability_score": 77.0,
+    "capacity_score": 90.0,
+    "lead_time_days": 19,
+    "active": true,
+    "location": {
+      "lat": 1.4927,
+      "lon": 103.7414
+    }
+  },
+  {
+    "supplier_id": "SUP-TH-002",
+    "supplier_name": "Chonburi Electronics Park",
+    "region": "Southeast Asia",
+    "country": "Thailand",
+    "origin_port": "Laem Chabang",
+    "capabilities": [
+      "microcontrollers",
+      "power-management"
+    ],
+    "reliability_score": 79.0,
+    "capacity_score": 85.0,
+    "lead_time_days": 21,
+    "active": true,
+    "location": {
+      "lat": 13.3611,
+      "lon": 100.9847
+    }
+  },
+  {
+    "supplier_id": "SUP-TW-003",
+    "supplier_name": "Taichung Advanced Semiconductors",
+    "region": "East Asia",
+    "country": "Taiwan",
+    "origin_port": "Taichung",
+    "capabilities": [
+      "system-on-chip",
+      "flash-storage"
+    ],
+    "reliability_score": 90.0,
+    "capacity_score": 84.0,
+    "lead_time_days": 13,
+    "active": true,
+    "location": {
+      "lat": 24.1477,
+      "lon": 120.6736
+    }
+  }
+]

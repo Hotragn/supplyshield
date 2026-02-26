@@ -1,0 +1,162 @@
+[
+  {
+    "product_id": "PRD-001",
+    "product_name": "SmartWatch Pro",
+    "category": "wearables",
+    "components": [
+      "microcontrollers",
+      "oled-displays",
+      "battery-cells",
+      "sensors",
+      "touch-sensors"
+    ],
+    "primary_supplier_id": "SUP-SZ-001",
+    "backup_supplier_ids": [
+      "SUP-VN-001",
+      "SUP-MY-001"
+    ]
+  },
+  {
+    "product_id": "PRD-002",
+    "product_name": "Wireless Earbuds X",
+    "category": "audio",
+    "components": [
+      "microcontrollers",
+      "battery-cells",
+      "battery-management",
+      "sensors"
+    ],
+    "primary_supplier_id": "SUP-SZ-002",
+    "backup_supplier_ids": [
+      "SUP-IN-001",
+      "SUP-VN-002"
+    ]
+  },
+  {
+    "product_id": "PRD-003",
+    "product_name": "UltraTab 10",
+    "category": "tablets",
+    "components": [
+      "system-on-chip",
+      "lcd-panels",
+      "battery-cells",
+      "memory-modules",
+      "touch-sensors"
+    ],
+    "primary_supplier_id": "SUP-SZ-003",
+    "backup_supplier_ids": [
+      "SUP-TH-001",
+      "SUP-KR-001"
+    ]
+  },
+  {
+    "product_id": "PRD-004",
+    "product_name": "HomeHub Controller",
+    "category": "smart-home",
+    "components": [
+      "microcontrollers",
+      "sensors",
+      "pcb-assemblies"
+    ],
+    "primary_supplier_id": "SUP-SZ-001",
+    "backup_supplier_ids": [
+      "SUP-VN-001",
+      "SUP-PL-001"
+    ]
+  },
+  {
+    "product_id": "PRD-005",
+    "product_name": "FitTrack Band",
+    "category": "wearables",
+    "components": [
+      "microcontrollers",
+      "battery-cells",
+      "oled-displays",
+      "sensors"
+    ],
+    "primary_supplier_id": "SUP-SZ-002",
+    "backup_supplier_ids": [
+      "SUP-IN-001",
+      "SUP-KR-002"
+    ]
+  },
+  {
+    "product_id": "PRD-006",
+    "product_name": "StreamBox 4K",
+    "category": "media",
+    "components": [
+      "system-on-chip",
+      "memory-modules",
+      "flash-storage",
+      "pcb-assemblies"
+    ],
+    "primary_supplier_id": "SUP-TW-001",
+    "backup_supplier_ids": [
+      "SUP-KR-001",
+      "SUP-JP-001"
+    ]
+  },
+  {
+    "product_id": "PRD-007",
+    "product_name": "AirPure Monitor",
+    "category": "smart-home",
+    "components": [
+      "sensors",
+      "lcd-panels",
+      "microcontrollers"
+    ],
+    "primary_supplier_id": "SUP-JP-001",
+    "backup_supplier_ids": [
+      "SUP-KR-003",
+      "SUP-TH-001"
+    ]
+  },
+  {
+    "product_id": "PRD-008",
+    "product_name": "SecureCam 360",
+    "category": "security",
+    "components": [
+      "sensors",
+      "memory-modules",
+      "pcb-assemblies",
+      "plastic-housings"
+    ],
+    "primary_supplier_id": "SUP-KR-001",
+    "backup_supplier_ids": [
+      "SUP-TW-002",
+      "SUP-MX-001"
+    ]
+  },
+  {
+    "product_id": "PRD-009",
+    "product_name": "PortaCharge Max",
+    "category": "accessories",
+    "components": [
+      "battery-cells",
+      "lithium-ion-packs",
+      "power-management",
+      "plastic-housings"
+    ],
+    "primary_supplier_id": "SUP-SZ-002",
+    "backup_supplier_ids": [
+      "SUP-IN-001",
+      "SUP-VN-002"
+    ]
+  },
+  {
+    "product_id": "PRD-010",
+    "product_name": "NovaPad Slim",
+    "category": "tablets",
+    "components": [
+      "system-on-chip",
+      "oled-displays",
+      "battery-cells",
+      "flash-storage"
+    ],
+    "primary_supplier_id": "SUP-SZ-003",
+    "backup_supplier_ids": [
+      "SUP-TH-001",
+      "SUP-TW-003"
+    ]
+  }
+]

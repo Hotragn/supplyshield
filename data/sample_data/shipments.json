@@ -1,0 +1,4496 @@
+[
+  {
+    "shipment_id": "SHP-SZ-0001",
+    "supplier_id": "SUP-SZ-001",
+    "product_id": "PRD-001",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 232.2,
+    "quantity": 121,
+    "@timestamp": "2026-02-22T15:33:13Z",
+    "estimated_arrival": "2026-03-13T19:47:27Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0002",
+    "supplier_id": "SUP-SZ-001",
+    "product_id": "PRD-004",
+    "status": "at_port",
+    "origin_port": "Shenzhen",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 242.9,
+    "quantity": 66,
+    "@timestamp": "2026-02-18T03:43:34Z",
+    "estimated_arrival": "2026-02-28T09:32:51Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0003",
+    "supplier_id": "SUP-SZ-001",
+    "product_id": "PRD-001",
+    "status": "at_port",
+    "origin_port": "Shenzhen",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 111.0,
+    "quantity": 151,
+    "@timestamp": "2026-02-25T11:40:50Z",
+    "estimated_arrival": "2026-03-13T10:27:53Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0004",
+    "supplier_id": "SUP-SZ-001",
+    "product_id": "PRD-004",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 250.0,
+    "quantity": 192,
+    "@timestamp": "2026-02-19T23:48:24Z",
+    "estimated_arrival": "2026-03-15T05:03:36Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0005",
+    "supplier_id": "SUP-SZ-001",
+    "product_id": "PRD-001",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 49.9,
+    "quantity": 129,
+    "@timestamp": "2026-02-21T09:48:06Z",
+    "estimated_arrival": "2026-03-03T22:08:34Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0006",
+    "supplier_id": "SUP-SZ-002",
+    "product_id": "PRD-002",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 267.9,
+    "quantity": 233,
+    "@timestamp": "2026-02-20T21:25:21Z",
+    "estimated_arrival": "2026-03-15T22:25:02Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0007",
+    "supplier_id": "SUP-SZ-002",
+    "product_id": "PRD-005",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 221.9,
+    "quantity": 243,
+    "@timestamp": "2026-02-18T20:39:24Z",
+    "estimated_arrival": "2026-03-01T07:53:34Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0008",
+    "supplier_id": "SUP-SZ-002",
+    "product_id": "PRD-009",
+    "status": "at_port",
+    "origin_port": "Shenzhen",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 132.4,
+    "quantity": 235,
+    "@timestamp": "2026-02-14T07:41:56Z",
+    "estimated_arrival": "2026-03-10T19:13:57Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0009",
+    "supplier_id": "SUP-SZ-002",
+    "product_id": "PRD-002",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 250.9,
+    "quantity": 90,
+    "@timestamp": "2026-02-15T18:45:45Z",
+    "estimated_arrival": "2026-03-16T01:59:05Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0010",
+    "supplier_id": "SUP-SZ-002",
+    "product_id": "PRD-005",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 297.5,
+    "quantity": 477,
+    "@timestamp": "2026-02-19T22:29:45Z",
+    "estimated_arrival": "2026-03-06T18:19:24Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0011",
+    "supplier_id": "SUP-SZ-003",
+    "product_id": "PRD-003",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 154.6,
+    "quantity": 399,
+    "@timestamp": "2026-02-16T16:59:31Z",
+    "estimated_arrival": "2026-03-12T03:27:50Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0012",
+    "supplier_id": "SUP-SZ-003",
+    "product_id": "PRD-010",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 223.4,
+    "quantity": 133,
+    "@timestamp": "2026-02-16T08:28:20Z",
+    "estimated_arrival": "2026-03-08T14:45:02Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0013",
+    "supplier_id": "SUP-SZ-003",
+    "product_id": "PRD-003",
+    "status": "at_port",
+    "origin_port": "Shenzhen",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 125.7,
+    "quantity": 216,
+    "@timestamp": "2026-02-22T23:26:24Z",
+    "estimated_arrival": "2026-03-15T20:18:01Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-SZ-0014",
+    "supplier_id": "SUP-SZ-003",
+    "product_id": "PRD-010",
+    "status": "delayed",
+    "origin_port": "Shenzhen",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 22.3964,
+      "lon": 113.917
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 271.5,
+    "quantity": 255,
+    "@timestamp": "2026-02-15T08:47:08Z",
+    "estimated_arrival": "2026-03-04T22:02:59Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0001",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 691,
+    "@timestamp": "2026-02-11T20:30:48Z",
+    "estimated_arrival": "2026-04-07T18:11:07Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0002",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-008",
+    "status": "delayed",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 17.0,
+    "quantity": 571,
+    "@timestamp": "2026-02-18T22:47:09Z",
+    "estimated_arrival": "2026-03-25T13:16:58Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0003",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-010",
+    "status": "delivered",
+    "origin_port": "Hong Kong",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 541,
+    "@timestamp": "2026-02-12T00:37:42Z",
+    "estimated_arrival": "2026-04-02T02:03:57Z",
+    "actual_arrival": "2026-02-22T12:37:39Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0004",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 85,
+    "@timestamp": "2026-02-15T06:55:39Z",
+    "estimated_arrival": "2026-03-26T01:13:05Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0005",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-009",
+    "status": "in_transit",
+    "origin_port": "Manila",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 6.6,
+    "quantity": 716,
+    "@timestamp": "2026-02-05T05:02:24Z",
+    "estimated_arrival": "2026-03-29T19:50:46Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0006",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Manzanillo",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 320,
+    "@timestamp": "2026-02-13T18:55:44Z",
+    "estimated_arrival": "2026-03-19T19:05:31Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0007",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-005",
+    "status": "delivered",
+    "origin_port": "Haiphong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 954,
+    "@timestamp": "2026-02-23T15:20:39Z",
+    "estimated_arrival": "2026-03-27T08:16:37Z",
+    "actual_arrival": "2026-02-22T14:57:34Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0008",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Manzanillo",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 4.5,
+    "quantity": 572,
+    "@timestamp": "2026-01-29T05:26:24Z",
+    "estimated_arrival": "2026-04-09T10:03:01Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0009",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-001",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 134,
+    "@timestamp": "2026-01-29T23:00:32Z",
+    "estimated_arrival": "2026-04-07T11:53:24Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0010",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Singapore",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 2.9,
+    "quantity": 989,
+    "@timestamp": "2026-02-24T11:15:17Z",
+    "estimated_arrival": "2026-04-01T00:51:15Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0011",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Singapore",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 151,
+    "@timestamp": "2026-02-07T00:56:21Z",
+    "estimated_arrival": "2026-04-10T11:49:55Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0012",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-005",
+    "status": "on_time",
+    "origin_port": "Busan",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 236,
+    "@timestamp": "2026-01-29T23:08:32Z",
+    "estimated_arrival": "2026-04-02T01:31:12Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0013",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-004",
+    "status": "in_transit",
+    "origin_port": "Haiphong",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 468,
+    "@timestamp": "2026-01-30T20:14:16Z",
+    "estimated_arrival": "2026-03-19T16:43:45Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0014",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-004",
+    "status": "delayed",
+    "origin_port": "Busan",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 12.8,
+    "quantity": 255,
+    "@timestamp": "2026-02-09T04:16:59Z",
+    "estimated_arrival": "2026-02-28T03:33:12Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0015",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-001",
+    "status": "in_transit",
+    "origin_port": "Haiphong",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 10.9,
+    "quantity": 92,
+    "@timestamp": "2026-02-11T09:46:03Z",
+    "estimated_arrival": "2026-03-12T02:01:55Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0016",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-004",
+    "status": "on_time",
+    "origin_port": "Manila",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 610,
+    "@timestamp": "2026-02-12T15:38:12Z",
+    "estimated_arrival": "2026-04-03T08:31:05Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0017",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-007",
+    "status": "in_transit",
+    "origin_port": "Chennai",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 1.2,
+    "quantity": 382,
+    "@timestamp": "2026-02-14T02:59:00Z",
+    "estimated_arrival": "2026-03-20T09:08:16Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0018",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-001",
+    "status": "on_time",
+    "origin_port": "Haiphong",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 82,
+    "@timestamp": "2026-02-14T18:04:21Z",
+    "estimated_arrival": "2026-03-14T18:15:48Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0019",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Singapore",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 2.3,
+    "quantity": 163,
+    "@timestamp": "2026-02-14T04:12:18Z",
+    "estimated_arrival": "2026-03-12T02:06:13Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0020",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Busan",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 71,
+    "@timestamp": "2026-02-07T06:24:56Z",
+    "estimated_arrival": "2026-03-23T14:49:15Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0021",
+    "supplier_id": "SUP-TW-001",
+    "product_id": "PRD-002",
+    "status": "delivered",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 436,
+    "@timestamp": "2026-02-12T06:17:54Z",
+    "estimated_arrival": "2026-03-09T05:40:37Z",
+    "actual_arrival": "2026-02-24T19:50:06Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0022",
+    "supplier_id": "SUP-TW-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 968,
+    "@timestamp": "2026-02-03T07:25:44Z",
+    "estimated_arrival": "2026-03-19T20:26:55Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0023",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-009",
+    "status": "in_transit",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 214,
+    "@timestamp": "2026-02-17T22:19:49Z",
+    "estimated_arrival": "2026-04-11T10:55:01Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0024",
+    "supplier_id": "SUP-TH-001",
+    "product_id": "PRD-009",
+    "status": "delayed",
+    "origin_port": "Laem Chabang",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 13.0882,
+      "lon": 100.9126
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 23.3,
+    "quantity": 618,
+    "@timestamp": "2026-02-12T12:40:20Z",
+    "estimated_arrival": "2026-04-09T06:49:58Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0025",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-003",
+    "status": "delayed",
+    "origin_port": "Manzanillo",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 30.3,
+    "quantity": 90,
+    "@timestamp": "2026-02-08T23:32:04Z",
+    "estimated_arrival": "2026-03-29T12:59:03Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0026",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-007",
+    "status": "delayed",
+    "origin_port": "Busan",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 44.1,
+    "quantity": 612,
+    "@timestamp": "2026-02-08T23:54:22Z",
+    "estimated_arrival": "2026-03-27T02:01:36Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0027",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 229,
+    "@timestamp": "2026-02-06T17:45:26Z",
+    "estimated_arrival": "2026-03-13T15:44:17Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0028",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-007",
+    "status": "delayed",
+    "origin_port": "Osaka",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 35.2,
+    "quantity": 343,
+    "@timestamp": "2026-01-29T23:04:00Z",
+    "estimated_arrival": "2026-04-10T00:05:43Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0029",
+    "supplier_id": "SUP-TW-001",
+    "product_id": "PRD-008",
+    "status": "on_time",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 95,
+    "@timestamp": "2026-02-10T16:51:47Z",
+    "estimated_arrival": "2026-03-22T02:10:27Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0030",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-006",
+    "status": "delivered",
+    "origin_port": "Busan",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 311,
+    "@timestamp": "2026-02-22T02:22:56Z",
+    "estimated_arrival": "2026-04-05T12:23:40Z",
+    "actual_arrival": "2026-02-23T07:32:06Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0031",
+    "supplier_id": "SUP-TH-001",
+    "product_id": "PRD-009",
+    "status": "delayed",
+    "origin_port": "Laem Chabang",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 13.0882,
+      "lon": 100.9126
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 41.4,
+    "quantity": 974,
+    "@timestamp": "2026-02-06T22:19:12Z",
+    "estimated_arrival": "2026-04-10T03:28:12Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0032",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-005",
+    "status": "delayed",
+    "origin_port": "Busan",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 15.9,
+    "quantity": 179,
+    "@timestamp": "2026-02-18T15:52:09Z",
+    "estimated_arrival": "2026-03-26T10:39:36Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0033",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-006",
+    "status": "in_transit",
+    "origin_port": "Haiphong",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 7.6,
+    "quantity": 537,
+    "@timestamp": "2026-02-12T04:13:01Z",
+    "estimated_arrival": "2026-04-08T15:59:43Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0034",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-001",
+    "status": "delayed",
+    "origin_port": "Singapore",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 27.2,
+    "quantity": 65,
+    "@timestamp": "2026-02-26T17:24:25Z",
+    "estimated_arrival": "2026-04-02T18:15:42Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0035",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 5.3,
+    "quantity": 594,
+    "@timestamp": "2026-02-26T12:59:52Z",
+    "estimated_arrival": "2026-03-03T03:25:02Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0036",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 585,
+    "@timestamp": "2026-02-22T09:19:56Z",
+    "estimated_arrival": "2026-03-05T10:32:32Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0037",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-006",
+    "status": "delivered",
+    "origin_port": "Osaka",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 235,
+    "@timestamp": "2026-02-06T08:52:19Z",
+    "estimated_arrival": "2026-03-29T04:14:29Z",
+    "actual_arrival": "2026-02-25T01:31:06Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0038",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-007",
+    "status": "on_time",
+    "origin_port": "Manzanillo",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 967,
+    "@timestamp": "2026-01-29T22:26:44Z",
+    "estimated_arrival": "2026-04-06T20:59:00Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0039",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-003",
+    "status": "delivered",
+    "origin_port": "Chennai",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 774,
+    "@timestamp": "2026-01-30T02:19:44Z",
+    "estimated_arrival": "2026-04-03T06:09:36Z",
+    "actual_arrival": "2026-02-24T18:33:15Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0040",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-004",
+    "status": "in_transit",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 9.4,
+    "quantity": 411,
+    "@timestamp": "2026-01-31T15:59:59Z",
+    "estimated_arrival": "2026-04-06T14:38:04Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0041",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-004",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 332,
+    "@timestamp": "2026-02-02T05:10:25Z",
+    "estimated_arrival": "2026-04-07T04:04:37Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0042",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-001",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 305,
+    "@timestamp": "2026-01-31T21:37:33Z",
+    "estimated_arrival": "2026-04-11T08:59:41Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0043",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-006",
+    "status": "in_transit",
+    "origin_port": "Osaka",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 359,
+    "@timestamp": "2026-01-29T15:42:33Z",
+    "estimated_arrival": "2026-03-04T21:45:39Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0044",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Osaka",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 131,
+    "@timestamp": "2026-02-08T22:25:43Z",
+    "estimated_arrival": "2026-03-15T01:00:20Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0045",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-006",
+    "status": "on_time",
+    "origin_port": "Chennai",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 414,
+    "@timestamp": "2026-01-30T20:18:59Z",
+    "estimated_arrival": "2026-03-08T04:40:59Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0046",
+    "supplier_id": "SUP-TW-001",
+    "product_id": "PRD-007",
+    "status": "delayed",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 45.3,
+    "quantity": 723,
+    "@timestamp": "2026-02-05T05:58:13Z",
+    "estimated_arrival": "2026-04-01T11:27:33Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0047",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-004",
+    "status": "delivered",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 658,
+    "@timestamp": "2026-02-17T09:56:26Z",
+    "estimated_arrival": "2026-04-06T03:27:50Z",
+    "actual_arrival": "2026-02-23T05:35:22Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0048",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-009",
+    "status": "in_transit",
+    "origin_port": "Osaka",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 4.9,
+    "quantity": 733,
+    "@timestamp": "2026-02-17T23:05:17Z",
+    "estimated_arrival": "2026-03-05T10:22:33Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0049",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-007",
+    "status": "delivered",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 602,
+    "@timestamp": "2026-02-17T19:16:33Z",
+    "estimated_arrival": "2026-03-23T22:34:54Z",
+    "actual_arrival": "2026-02-26T19:54:40Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0050",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-004",
+    "status": "on_time",
+    "origin_port": "Osaka",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 690,
+    "@timestamp": "2026-02-17T03:56:25Z",
+    "estimated_arrival": "2026-03-19T06:29:09Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0051",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-004",
+    "status": "on_time",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 694,
+    "@timestamp": "2026-02-24T06:54:25Z",
+    "estimated_arrival": "2026-03-22T12:16:38Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0052",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 9.8,
+    "quantity": 708,
+    "@timestamp": "2026-02-17T12:27:28Z",
+    "estimated_arrival": "2026-04-04T07:41:25Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0053",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-001",
+    "status": "delayed",
+    "origin_port": "Busan",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 47.4,
+    "quantity": 890,
+    "@timestamp": "2026-02-03T18:38:51Z",
+    "estimated_arrival": "2026-03-19T20:52:46Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0054",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 8.4,
+    "quantity": 429,
+    "@timestamp": "2026-02-19T12:17:28Z",
+    "estimated_arrival": "2026-03-28T16:45:26Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0055",
+    "supplier_id": "SUP-TW-001",
+    "product_id": "PRD-002",
+    "status": "delivered",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 843,
+    "@timestamp": "2026-01-29T02:13:27Z",
+    "estimated_arrival": "2026-03-22T14:55:24Z",
+    "actual_arrival": "2026-02-26T13:56:01Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0056",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 592,
+    "@timestamp": "2026-02-08T23:14:03Z",
+    "estimated_arrival": "2026-04-10T15:12:06Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0057",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-008",
+    "status": "on_time",
+    "origin_port": "Hong Kong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 456,
+    "@timestamp": "2026-02-01T21:57:00Z",
+    "estimated_arrival": "2026-03-23T22:30:45Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0058",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 285,
+    "@timestamp": "2026-02-04T06:40:50Z",
+    "estimated_arrival": "2026-04-05T18:51:18Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0059",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-009",
+    "status": "delivered",
+    "origin_port": "Osaka",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 470,
+    "@timestamp": "2026-02-24T12:10:19Z",
+    "estimated_arrival": "2026-03-12T09:41:20Z",
+    "actual_arrival": "2026-02-25T11:21:14Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0060",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-009",
+    "status": "delayed",
+    "origin_port": "Yokohama",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 17.4,
+    "quantity": 730,
+    "@timestamp": "2026-02-22T05:56:24Z",
+    "estimated_arrival": "2026-03-09T05:53:39Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0061",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-007",
+    "status": "in_transit",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 5.6,
+    "quantity": 231,
+    "@timestamp": "2026-02-01T20:16:41Z",
+    "estimated_arrival": "2026-03-16T23:14:50Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0062",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-010",
+    "status": "delivered",
+    "origin_port": "Chennai",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 409,
+    "@timestamp": "2026-02-12T12:32:04Z",
+    "estimated_arrival": "2026-04-10T07:29:42Z",
+    "actual_arrival": "2026-02-25T08:07:35Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0063",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-007",
+    "status": "on_time",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 839,
+    "@timestamp": "2026-02-08T17:37:05Z",
+    "estimated_arrival": "2026-03-09T12:50:55Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0064",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-005",
+    "status": "delivered",
+    "origin_port": "Busan",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 364,
+    "@timestamp": "2026-02-06T18:22:15Z",
+    "estimated_arrival": "2026-04-03T22:47:53Z",
+    "actual_arrival": "2026-02-23T05:03:29Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0065",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-008",
+    "status": "on_time",
+    "origin_port": "Singapore",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 47,
+    "@timestamp": "2026-01-30T14:58:16Z",
+    "estimated_arrival": "2026-03-25T20:59:55Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0066",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-001",
+    "status": "delayed",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 27.4,
+    "quantity": 206,
+    "@timestamp": "2026-02-25T07:45:18Z",
+    "estimated_arrival": "2026-03-16T12:17:37Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0067",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-008",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 9.1,
+    "quantity": 304,
+    "@timestamp": "2026-02-04T06:30:46Z",
+    "estimated_arrival": "2026-04-05T10:28:19Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0068",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Osaka",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 73,
+    "@timestamp": "2026-01-27T20:01:34Z",
+    "estimated_arrival": "2026-03-15T05:31:05Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0069",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 792,
+    "@timestamp": "2026-02-25T21:37:06Z",
+    "estimated_arrival": "2026-03-10T17:05:28Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0070",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-001",
+    "status": "delivered",
+    "origin_port": "Singapore",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 504,
+    "@timestamp": "2026-02-06T17:56:58Z",
+    "estimated_arrival": "2026-03-24T15:30:42Z",
+    "actual_arrival": "2026-02-25T17:48:15Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0071",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-005",
+    "status": "delivered",
+    "origin_port": "Haiphong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 641,
+    "@timestamp": "2026-01-28T22:04:15Z",
+    "estimated_arrival": "2026-03-31T10:32:42Z",
+    "actual_arrival": "2026-02-22T22:37:29Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0072",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-005",
+    "status": "delayed",
+    "origin_port": "Busan",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 12.9,
+    "quantity": 609,
+    "@timestamp": "2026-02-06T12:16:11Z",
+    "estimated_arrival": "2026-04-10T23:47:25Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0073",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-004",
+    "status": "delayed",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 36.9,
+    "quantity": 124,
+    "@timestamp": "2026-02-05T21:58:51Z",
+    "estimated_arrival": "2026-03-13T02:25:52Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0074",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-010",
+    "status": "on_time",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 375,
+    "@timestamp": "2026-02-10T20:23:00Z",
+    "estimated_arrival": "2026-03-28T22:31:35Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0075",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-009",
+    "status": "delivered",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 862,
+    "@timestamp": "2026-02-12T03:00:53Z",
+    "estimated_arrival": "2026-03-18T21:45:38Z",
+    "actual_arrival": "2026-02-25T00:29:50Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0076",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-008",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 771,
+    "@timestamp": "2026-02-11T04:18:08Z",
+    "estimated_arrival": "2026-03-28T10:50:34Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0077",
+    "supplier_id": "SUP-TH-001",
+    "product_id": "PRD-009",
+    "status": "in_transit",
+    "origin_port": "Laem Chabang",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 13.0882,
+      "lon": 100.9126
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 865,
+    "@timestamp": "2026-02-04T21:37:15Z",
+    "estimated_arrival": "2026-03-11T15:23:08Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0078",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-004",
+    "status": "delivered",
+    "origin_port": "Singapore",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 922,
+    "@timestamp": "2026-02-13T07:22:57Z",
+    "estimated_arrival": "2026-04-01T20:27:46Z",
+    "actual_arrival": "2026-02-23T23:34:40Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0079",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-007",
+    "status": "in_transit",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 5.9,
+    "quantity": 206,
+    "@timestamp": "2026-02-12T04:55:26Z",
+    "estimated_arrival": "2026-03-15T10:39:18Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0080",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-006",
+    "status": "in_transit",
+    "origin_port": "Osaka",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 7.2,
+    "quantity": 589,
+    "@timestamp": "2026-02-26T12:39:04Z",
+    "estimated_arrival": "2026-04-10T13:06:50Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0081",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-004",
+    "status": "in_transit",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 796,
+    "@timestamp": "2026-02-19T14:55:36Z",
+    "estimated_arrival": "2026-03-20T18:42:51Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0082",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-008",
+    "status": "delivered",
+    "origin_port": "Haiphong",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 321,
+    "@timestamp": "2026-02-20T04:24:38Z",
+    "estimated_arrival": "2026-03-30T06:29:13Z",
+    "actual_arrival": "2026-02-25T07:12:54Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0083",
+    "supplier_id": "SUP-TH-001",
+    "product_id": "PRD-006",
+    "status": "on_time",
+    "origin_port": "Laem Chabang",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 13.0882,
+      "lon": 100.9126
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 455,
+    "@timestamp": "2026-01-27T22:23:07Z",
+    "estimated_arrival": "2026-03-24T01:10:12Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0084",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-008",
+    "status": "in_transit",
+    "origin_port": "Yokohama",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 3.0,
+    "quantity": 758,
+    "@timestamp": "2026-02-21T01:17:57Z",
+    "estimated_arrival": "2026-03-05T02:12:35Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0085",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Manzanillo",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 8.9,
+    "quantity": 761,
+    "@timestamp": "2026-02-09T03:27:26Z",
+    "estimated_arrival": "2026-04-02T06:44:22Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0086",
+    "supplier_id": "SUP-TH-001",
+    "product_id": "PRD-005",
+    "status": "delivered",
+    "origin_port": "Laem Chabang",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 13.0882,
+      "lon": 100.9126
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 252,
+    "@timestamp": "2026-02-16T00:07:32Z",
+    "estimated_arrival": "2026-03-13T03:09:16Z",
+    "actual_arrival": "2026-02-23T06:59:51Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0087",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-005",
+    "status": "delayed",
+    "origin_port": "Busan",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 14.0,
+    "quantity": 734,
+    "@timestamp": "2026-01-29T12:12:55Z",
+    "estimated_arrival": "2026-03-27T21:33:01Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0088",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-008",
+    "status": "delayed",
+    "origin_port": "Chennai",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 12.4,
+    "quantity": 500,
+    "@timestamp": "2026-02-12T11:17:08Z",
+    "estimated_arrival": "2026-03-14T19:44:43Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0089",
+    "supplier_id": "SUP-TW-001",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 861,
+    "@timestamp": "2026-02-24T20:54:45Z",
+    "estimated_arrival": "2026-03-21T11:14:39Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0090",
+    "supplier_id": "SUP-TH-001",
+    "product_id": "PRD-001",
+    "status": "in_transit",
+    "origin_port": "Laem Chabang",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 13.0882,
+      "lon": 100.9126
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 9.7,
+    "quantity": 107,
+    "@timestamp": "2026-01-28T00:20:20Z",
+    "estimated_arrival": "2026-03-05T01:02:41Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0091",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-007",
+    "status": "on_time",
+    "origin_port": "Chennai",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 814,
+    "@timestamp": "2026-02-11T03:42:27Z",
+    "estimated_arrival": "2026-03-19T15:42:11Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0092",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Manila",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 602,
+    "@timestamp": "2026-02-08T04:49:13Z",
+    "estimated_arrival": "2026-03-26T15:43:48Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0093",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-002",
+    "status": "delivered",
+    "origin_port": "Haiphong",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 290,
+    "@timestamp": "2026-02-07T00:27:06Z",
+    "estimated_arrival": "2026-03-06T17:48:44Z",
+    "actual_arrival": "2026-02-25T23:06:08Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0094",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-003",
+    "status": "delayed",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 28.2,
+    "quantity": 501,
+    "@timestamp": "2026-02-18T02:15:11Z",
+    "estimated_arrival": "2026-03-10T00:23:55Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0095",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Haiphong",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 723,
+    "@timestamp": "2026-02-19T19:53:41Z",
+    "estimated_arrival": "2026-03-11T11:19:46Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0096",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-010",
+    "status": "delivered",
+    "origin_port": "Chennai",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 137,
+    "@timestamp": "2026-02-10T11:52:30Z",
+    "estimated_arrival": "2026-03-28T07:51:44Z",
+    "actual_arrival": "2026-02-22T06:57:02Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0097",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-003",
+    "status": "delayed",
+    "origin_port": "Singapore",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 18.0,
+    "quantity": 629,
+    "@timestamp": "2026-02-04T08:42:37Z",
+    "estimated_arrival": "2026-03-24T21:02:33Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0098",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-008",
+    "status": "delayed",
+    "origin_port": "Osaka",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 36.8,
+    "quantity": 985,
+    "@timestamp": "2026-02-18T15:56:33Z",
+    "estimated_arrival": "2026-03-23T14:10:49Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0099",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Manila",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 638,
+    "@timestamp": "2026-02-19T07:41:42Z",
+    "estimated_arrival": "2026-03-03T20:24:04Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0100",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-010",
+    "status": "delivered",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 610,
+    "@timestamp": "2026-02-25T14:59:35Z",
+    "estimated_arrival": "2026-04-02T02:34:47Z",
+    "actual_arrival": "2026-02-24T11:29:59Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0101",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-008",
+    "status": "delivered",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 466,
+    "@timestamp": "2026-02-07T18:54:53Z",
+    "estimated_arrival": "2026-03-21T11:13:20Z",
+    "actual_arrival": "2026-02-26T09:00:39Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0102",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-007",
+    "status": "in_transit",
+    "origin_port": "Yokohama",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 8.0,
+    "quantity": 357,
+    "@timestamp": "2026-02-14T11:34:31Z",
+    "estimated_arrival": "2026-03-21T15:10:30Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0103",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-007",
+    "status": "on_time",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 485,
+    "@timestamp": "2026-02-24T04:33:24Z",
+    "estimated_arrival": "2026-03-10T22:29:35Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0104",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-007",
+    "status": "delivered",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 493,
+    "@timestamp": "2026-02-14T10:25:18Z",
+    "estimated_arrival": "2026-03-08T02:02:49Z",
+    "actual_arrival": "2026-02-25T00:32:47Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0105",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-008",
+    "status": "delivered",
+    "origin_port": "Chennai",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 293,
+    "@timestamp": "2026-02-10T08:31:18Z",
+    "estimated_arrival": "2026-04-09T15:34:56Z",
+    "actual_arrival": "2026-02-24T15:23:09Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0106",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-008",
+    "status": "delayed",
+    "origin_port": "Haiphong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 47.0,
+    "quantity": 838,
+    "@timestamp": "2026-02-19T15:39:56Z",
+    "estimated_arrival": "2026-03-06T19:12:26Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0107",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-001",
+    "status": "delivered",
+    "origin_port": "Manzanillo",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 881,
+    "@timestamp": "2026-01-30T10:39:01Z",
+    "estimated_arrival": "2026-03-20T03:14:56Z",
+    "actual_arrival": "2026-02-26T05:51:50Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0108",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-003",
+    "status": "on_time",
+    "origin_port": "Singapore",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 541,
+    "@timestamp": "2026-02-05T16:03:48Z",
+    "estimated_arrival": "2026-03-18T02:43:03Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0109",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-008",
+    "status": "in_transit",
+    "origin_port": "Manila",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 6.6,
+    "quantity": 215,
+    "@timestamp": "2026-01-30T04:12:53Z",
+    "estimated_arrival": "2026-03-22T04:39:44Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0110",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 368,
+    "@timestamp": "2026-01-29T19:18:04Z",
+    "estimated_arrival": "2026-03-22T04:07:51Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0111",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-001",
+    "status": "in_transit",
+    "origin_port": "Singapore",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 3.6,
+    "quantity": 613,
+    "@timestamp": "2026-01-27T20:45:01Z",
+    "estimated_arrival": "2026-03-21T09:01:12Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0112",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-008",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 585,
+    "@timestamp": "2026-02-03T22:41:29Z",
+    "estimated_arrival": "2026-03-16T10:17:37Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0113",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-006",
+    "status": "on_time",
+    "origin_port": "Hong Kong",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 605,
+    "@timestamp": "2026-02-15T08:13:15Z",
+    "estimated_arrival": "2026-04-06T11:54:34Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0114",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-001",
+    "status": "in_transit",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 5.7,
+    "quantity": 415,
+    "@timestamp": "2026-01-28T04:18:06Z",
+    "estimated_arrival": "2026-04-03T16:43:39Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0115",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-003",
+    "status": "delivered",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 534,
+    "@timestamp": "2026-01-28T20:54:19Z",
+    "estimated_arrival": "2026-03-14T10:32:46Z",
+    "actual_arrival": "2026-02-26T07:54:58Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0116",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-008",
+    "status": "delayed",
+    "origin_port": "Singapore",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 44.8,
+    "quantity": 759,
+    "@timestamp": "2026-02-22T12:10:05Z",
+    "estimated_arrival": "2026-04-07T03:39:54Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0117",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 658,
+    "@timestamp": "2026-02-06T01:12:45Z",
+    "estimated_arrival": "2026-03-28T10:11:14Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0118",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-006",
+    "status": "on_time",
+    "origin_port": "Singapore",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 997,
+    "@timestamp": "2026-02-17T07:57:50Z",
+    "estimated_arrival": "2026-03-31T10:55:32Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0119",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-008",
+    "status": "delivered",
+    "origin_port": "Chennai",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 90,
+    "@timestamp": "2026-02-19T18:55:31Z",
+    "estimated_arrival": "2026-03-29T22:41:09Z",
+    "actual_arrival": "2026-02-25T09:28:28Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0120",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-002",
+    "status": "delivered",
+    "origin_port": "Busan",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 474,
+    "@timestamp": "2026-02-21T20:10:38Z",
+    "estimated_arrival": "2026-03-13T00:11:46Z",
+    "actual_arrival": "2026-02-26T16:29:10Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0121",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-001",
+    "status": "in_transit",
+    "origin_port": "Yokohama",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 4.5,
+    "quantity": 270,
+    "@timestamp": "2026-02-10T21:31:12Z",
+    "estimated_arrival": "2026-03-24T17:34:48Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0122",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Chennai",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.9,
+    "quantity": 654,
+    "@timestamp": "2026-02-06T08:06:11Z",
+    "estimated_arrival": "2026-03-21T17:29:47Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0123",
+    "supplier_id": "SUP-TH-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Laem Chabang",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 13.0882,
+      "lon": 100.9126
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 7.7,
+    "quantity": 281,
+    "@timestamp": "2026-02-06T19:50:04Z",
+    "estimated_arrival": "2026-04-08T09:12:26Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0124",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-005",
+    "status": "delivered",
+    "origin_port": "Manila",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 472,
+    "@timestamp": "2026-01-29T11:23:25Z",
+    "estimated_arrival": "2026-04-12T06:55:12Z",
+    "actual_arrival": "2026-02-25T08:03:41Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0125",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 413,
+    "@timestamp": "2026-02-01T05:33:30Z",
+    "estimated_arrival": "2026-03-04T12:35:08Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0126",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 42,
+    "@timestamp": "2026-01-28T11:50:23Z",
+    "estimated_arrival": "2026-03-28T19:03:02Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0127",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-001",
+    "status": "on_time",
+    "origin_port": "Osaka",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 952,
+    "@timestamp": "2026-02-08T15:20:50Z",
+    "estimated_arrival": "2026-03-21T16:30:14Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0128",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-005",
+    "status": "delivered",
+    "origin_port": "Hong Kong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 841,
+    "@timestamp": "2026-02-16T06:17:19Z",
+    "estimated_arrival": "2026-03-27T20:13:42Z",
+    "actual_arrival": "2026-02-23T17:27:10Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0129",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-003",
+    "status": "on_time",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 336,
+    "@timestamp": "2026-02-03T04:09:37Z",
+    "estimated_arrival": "2026-03-01T07:11:34Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0130",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-003",
+    "status": "delayed",
+    "origin_port": "Yokohama",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 22.6,
+    "quantity": 199,
+    "@timestamp": "2026-02-20T19:23:15Z",
+    "estimated_arrival": "2026-04-03T10:31:03Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0131",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-006",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 283,
+    "@timestamp": "2026-01-30T09:50:41Z",
+    "estimated_arrival": "2026-04-10T09:01:20Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0132",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Chennai",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 499,
+    "@timestamp": "2026-01-28T22:40:36Z",
+    "estimated_arrival": "2026-03-06T00:35:57Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0133",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-007",
+    "status": "on_time",
+    "origin_port": "Busan",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 112,
+    "@timestamp": "2026-02-03T02:40:08Z",
+    "estimated_arrival": "2026-02-28T10:39:29Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0134",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Manzanillo",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 618,
+    "@timestamp": "2026-02-15T09:37:17Z",
+    "estimated_arrival": "2026-03-27T22:16:04Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0135",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Yokohama",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 654,
+    "@timestamp": "2026-01-31T07:18:39Z",
+    "estimated_arrival": "2026-03-24T12:48:22Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0136",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.8,
+    "quantity": 951,
+    "@timestamp": "2026-02-05T19:11:03Z",
+    "estimated_arrival": "2026-03-28T09:33:24Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0137",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-003",
+    "status": "delayed",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 13.3,
+    "quantity": 138,
+    "@timestamp": "2026-02-23T21:58:54Z",
+    "estimated_arrival": "2026-04-07T20:54:20Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0138",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-007",
+    "status": "on_time",
+    "origin_port": "Busan",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 449,
+    "@timestamp": "2026-02-09T05:04:29Z",
+    "estimated_arrival": "2026-03-31T19:14:55Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0139",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-007",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 437,
+    "@timestamp": "2026-01-29T15:50:30Z",
+    "estimated_arrival": "2026-03-12T03:21:56Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0140",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-006",
+    "status": "in_transit",
+    "origin_port": "Haiphong",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 5.3,
+    "quantity": 895,
+    "@timestamp": "2026-02-15T22:49:33Z",
+    "estimated_arrival": "2026-04-11T23:49:10Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0141",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-009",
+    "status": "on_time",
+    "origin_port": "Yokohama",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 82,
+    "@timestamp": "2026-02-14T21:17:57Z",
+    "estimated_arrival": "2026-03-08T04:23:52Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0142",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-008",
+    "status": "delayed",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 19.6,
+    "quantity": 41,
+    "@timestamp": "2026-02-25T07:32:36Z",
+    "estimated_arrival": "2026-03-14T12:08:44Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0143",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 10.0,
+    "quantity": 232,
+    "@timestamp": "2026-02-09T05:45:50Z",
+    "estimated_arrival": "2026-04-04T14:32:38Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0144",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-006",
+    "status": "on_time",
+    "origin_port": "Busan",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 303,
+    "@timestamp": "2026-02-01T01:54:27Z",
+    "estimated_arrival": "2026-03-06T04:45:01Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0145",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-009",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 2.1,
+    "quantity": 154,
+    "@timestamp": "2026-02-26T09:15:37Z",
+    "estimated_arrival": "2026-04-03T14:11:01Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0146",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Busan",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 2.1,
+    "quantity": 149,
+    "@timestamp": "2026-02-04T13:55:22Z",
+    "estimated_arrival": "2026-03-22T23:30:22Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0147",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Haiphong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 627,
+    "@timestamp": "2026-02-23T13:26:27Z",
+    "estimated_arrival": "2026-03-22T00:00:49Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0148",
+    "supplier_id": "SUP-TH-001",
+    "product_id": "PRD-001",
+    "status": "on_time",
+    "origin_port": "Laem Chabang",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 13.0882,
+      "lon": 100.9126
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 328,
+    "@timestamp": "2026-02-13T02:10:09Z",
+    "estimated_arrival": "2026-04-11T05:58:17Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0149",
+    "supplier_id": "SUP-TW-001",
+    "product_id": "PRD-008",
+    "status": "in_transit",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 522,
+    "@timestamp": "2026-02-05T11:01:51Z",
+    "estimated_arrival": "2026-03-19T08:21:42Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0150",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 1.8,
+    "quantity": 301,
+    "@timestamp": "2026-02-08T02:27:04Z",
+    "estimated_arrival": "2026-03-25T14:06:18Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0151",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-006",
+    "status": "on_time",
+    "origin_port": "Haiphong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 321,
+    "@timestamp": "2026-02-13T05:17:05Z",
+    "estimated_arrival": "2026-03-26T11:17:26Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0152",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 758,
+    "@timestamp": "2026-01-31T20:48:19Z",
+    "estimated_arrival": "2026-03-18T18:06:49Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0153",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-004",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 445,
+    "@timestamp": "2026-02-04T22:38:20Z",
+    "estimated_arrival": "2026-03-13T14:00:39Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0154",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-005",
+    "status": "delivered",
+    "origin_port": "Yokohama",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 88,
+    "@timestamp": "2026-02-24T02:16:41Z",
+    "estimated_arrival": "2026-03-03T14:06:17Z",
+    "actual_arrival": "2026-02-24T16:08:05Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0155",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-006",
+    "status": "on_time",
+    "origin_port": "Haiphong",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 620,
+    "@timestamp": "2026-01-29T03:11:24Z",
+    "estimated_arrival": "2026-03-24T13:05:51Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0156",
+    "supplier_id": "SUP-VN-001",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Ho Chi Minh City",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 10.6553,
+      "lon": 106.5977
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 908,
+    "@timestamp": "2026-01-30T08:33:09Z",
+    "estimated_arrival": "2026-03-02T02:17:13Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0157",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Osaka",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 1.2,
+    "quantity": 237,
+    "@timestamp": "2026-02-22T04:33:15Z",
+    "estimated_arrival": "2026-03-21T01:09:07Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0158",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Singapore",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 137,
+    "@timestamp": "2026-02-03T22:53:02Z",
+    "estimated_arrival": "2026-03-25T02:12:34Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0159",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-007",
+    "status": "on_time",
+    "origin_port": "Chennai",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 711,
+    "@timestamp": "2026-02-07T13:12:59Z",
+    "estimated_arrival": "2026-02-28T23:41:02Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0160",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-005",
+    "status": "delayed",
+    "origin_port": "Hong Kong",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 21.8,
+    "quantity": 963,
+    "@timestamp": "2026-02-16T15:17:10Z",
+    "estimated_arrival": "2026-02-28T02:24:27Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0161",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-003",
+    "status": "in_transit",
+    "origin_port": "Singapore",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 165,
+    "@timestamp": "2026-02-04T14:27:44Z",
+    "estimated_arrival": "2026-04-11T14:11:30Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0162",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-009",
+    "status": "in_transit",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 5.0,
+    "quantity": 181,
+    "@timestamp": "2026-02-15T17:31:18Z",
+    "estimated_arrival": "2026-03-31T13:57:55Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0163",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-010",
+    "status": "delivered",
+    "origin_port": "Chennai",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 181,
+    "@timestamp": "2026-02-04T04:45:58Z",
+    "estimated_arrival": "2026-03-02T00:30:32Z",
+    "actual_arrival": "2026-02-26T10:10:12Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0164",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-007",
+    "status": "in_transit",
+    "origin_port": "Manila",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 299,
+    "@timestamp": "2026-02-20T08:45:01Z",
+    "estimated_arrival": "2026-03-22T08:59:51Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0165",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-007",
+    "status": "delayed",
+    "origin_port": "Yokohama",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 36.4,
+    "quantity": 518,
+    "@timestamp": "2026-02-11T00:34:02Z",
+    "estimated_arrival": "2026-03-13T09:39:03Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0166",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-007",
+    "status": "delivered",
+    "origin_port": "Busan",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 229,
+    "@timestamp": "2026-02-17T18:56:16Z",
+    "estimated_arrival": "2026-03-09T03:01:22Z",
+    "actual_arrival": "2026-02-26T03:29:30Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0167",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Osaka",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.1,
+    "quantity": 199,
+    "@timestamp": "2026-02-22T22:56:46Z",
+    "estimated_arrival": "2026-03-23T06:22:00Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0168",
+    "supplier_id": "SUP-KR-002",
+    "product_id": "PRD-009",
+    "status": "on_time",
+    "origin_port": "Busan",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 93,
+    "@timestamp": "2026-02-14T22:04:07Z",
+    "estimated_arrival": "2026-04-01T11:33:20Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0169",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-001",
+    "status": "delivered",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 609,
+    "@timestamp": "2026-02-13T22:52:31Z",
+    "estimated_arrival": "2026-03-17T15:01:49Z",
+    "actual_arrival": "2026-02-23T15:08:34Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0170",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Osaka",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 840,
+    "@timestamp": "2026-01-29T09:40:39Z",
+    "estimated_arrival": "2026-03-20T01:49:20Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0171",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-006",
+    "status": "delayed",
+    "origin_port": "Haiphong",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 42.4,
+    "quantity": 466,
+    "@timestamp": "2026-02-09T03:58:21Z",
+    "estimated_arrival": "2026-03-22T21:15:51Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0172",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-005",
+    "status": "delivered",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 817,
+    "@timestamp": "2026-02-21T18:54:15Z",
+    "estimated_arrival": "2026-03-22T07:01:49Z",
+    "actual_arrival": "2026-02-26T06:16:36Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0173",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-004",
+    "status": "in_transit",
+    "origin_port": "Manzanillo",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 764,
+    "@timestamp": "2026-01-29T02:02:20Z",
+    "estimated_arrival": "2026-03-28T05:32:51Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0174",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-004",
+    "status": "delayed",
+    "origin_port": "Busan",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 21.2,
+    "quantity": 636,
+    "@timestamp": "2026-02-22T05:53:37Z",
+    "estimated_arrival": "2026-04-02T05:37:29Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0175",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-003",
+    "status": "on_time",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 495,
+    "@timestamp": "2026-02-04T04:45:32Z",
+    "estimated_arrival": "2026-04-02T06:23:24Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0176",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-010",
+    "status": "on_time",
+    "origin_port": "Manila",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 904,
+    "@timestamp": "2026-01-28T16:51:33Z",
+    "estimated_arrival": "2026-03-13T17:48:09Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0177",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Manila",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 835,
+    "@timestamp": "2026-02-18T14:11:41Z",
+    "estimated_arrival": "2026-03-02T07:16:39Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0178",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Manzanillo",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 5.4,
+    "quantity": 397,
+    "@timestamp": "2026-02-01T21:08:18Z",
+    "estimated_arrival": "2026-03-03T04:59:16Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0179",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-002",
+    "status": "on_time",
+    "origin_port": "Singapore",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 493,
+    "@timestamp": "2026-02-09T10:07:22Z",
+    "estimated_arrival": "2026-04-10T19:37:42Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0180",
+    "supplier_id": "SUP-VN-002",
+    "product_id": "PRD-001",
+    "status": "on_time",
+    "origin_port": "Haiphong",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 20.8449,
+      "lon": 106.6881
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 349,
+    "@timestamp": "2026-02-08T16:21:20Z",
+    "estimated_arrival": "2026-03-21T21:24:13Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0181",
+    "supplier_id": "SUP-TW-001",
+    "product_id": "PRD-008",
+    "status": "delayed",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 44.4,
+    "quantity": 751,
+    "@timestamp": "2026-02-24T07:14:34Z",
+    "estimated_arrival": "2026-03-28T06:16:12Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0182",
+    "supplier_id": "SUP-TW-001",
+    "product_id": "PRD-004",
+    "status": "in_transit",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 555,
+    "@timestamp": "2026-02-08T12:54:00Z",
+    "estimated_arrival": "2026-03-15T20:14:10Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0183",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-005",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 73,
+    "@timestamp": "2026-02-03T03:42:59Z",
+    "estimated_arrival": "2026-03-28T07:30:51Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0184",
+    "supplier_id": "SUP-TW-002",
+    "product_id": "PRD-006",
+    "status": "delayed",
+    "origin_port": "Kaohsiung",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 22.571,
+      "lon": 120.28
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 36.4,
+    "quantity": 278,
+    "@timestamp": "2026-02-05T02:52:18Z",
+    "estimated_arrival": "2026-03-28T17:17:29Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0185",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Hong Kong",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 616,
+    "@timestamp": "2026-02-06T22:09:33Z",
+    "estimated_arrival": "2026-04-09T04:02:39Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0186",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-007",
+    "status": "delayed",
+    "origin_port": "Osaka",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 37.5,
+    "quantity": 337,
+    "@timestamp": "2026-02-10T01:32:09Z",
+    "estimated_arrival": "2026-03-28T03:29:19Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0187",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-003",
+    "status": "on_time",
+    "origin_port": "Yokohama",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 0.0,
+    "quantity": 115,
+    "@timestamp": "2026-02-07T10:49:19Z",
+    "estimated_arrival": "2026-03-18T11:04:37Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0188",
+    "supplier_id": "SUP-JP-002",
+    "product_id": "PRD-001",
+    "status": "delivered",
+    "origin_port": "Yokohama",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 35.4545,
+      "lon": 139.6547
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 369,
+    "@timestamp": "2026-01-29T09:38:19Z",
+    "estimated_arrival": "2026-03-21T05:27:43Z",
+    "actual_arrival": "2026-02-25T16:46:29Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0189",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-003",
+    "status": "delayed",
+    "origin_port": "Busan",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 42.4,
+    "quantity": 539,
+    "@timestamp": "2026-02-03T16:55:48Z",
+    "estimated_arrival": "2026-04-05T13:50:47Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0190",
+    "supplier_id": "SUP-HK-001",
+    "product_id": "PRD-009",
+    "status": "delayed",
+    "origin_port": "Hong Kong",
+    "destination_port": "Singapore",
+    "origin_location": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "destination_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "delay_hours": 24.1,
+    "quantity": 154,
+    "@timestamp": "2026-02-08T21:56:33Z",
+    "estimated_arrival": "2026-03-06T14:51:03Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0191",
+    "supplier_id": "SUP-KR-001",
+    "product_id": "PRD-010",
+    "status": "delivered",
+    "origin_port": "Busan",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 35.104,
+      "lon": 129.035
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 64,
+    "@timestamp": "2026-02-14T12:08:30Z",
+    "estimated_arrival": "2026-03-29T14:11:57Z",
+    "actual_arrival": "2026-02-25T15:27:22Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0192",
+    "supplier_id": "SUP-PH-001",
+    "product_id": "PRD-010",
+    "status": "in_transit",
+    "origin_port": "Manila",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": 14.5764,
+      "lon": 120.9688
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 9.0,
+    "quantity": 259,
+    "@timestamp": "2026-02-10T19:28:19Z",
+    "estimated_arrival": "2026-03-13T10:45:29Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0193",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-008",
+    "status": "delivered",
+    "origin_port": "Chennai",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 0.0,
+    "quantity": 714,
+    "@timestamp": "2026-01-29T10:01:34Z",
+    "estimated_arrival": "2026-04-12T03:31:42Z",
+    "actual_arrival": "2026-02-24T12:33:30Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0194",
+    "supplier_id": "SUP-JP-001",
+    "product_id": "PRD-007",
+    "status": "in_transit",
+    "origin_port": "Osaka",
+    "destination_port": "Long Beach",
+    "origin_location": {
+      "lat": 34.6492,
+      "lon": 135.432
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1895
+    },
+    "delay_hours": 0.0,
+    "quantity": 856,
+    "@timestamp": "2026-02-20T20:10:39Z",
+    "estimated_arrival": "2026-03-26T10:29:04Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0195",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-005",
+    "status": "delayed",
+    "origin_port": "Singapore",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 29.3,
+    "quantity": 587,
+    "@timestamp": "2026-01-29T19:16:07Z",
+    "estimated_arrival": "2026-03-31T03:11:57Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0196",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-002",
+    "status": "in_transit",
+    "origin_port": "Manzanillo",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 9.2,
+    "quantity": 480,
+    "@timestamp": "2026-01-30T16:08:22Z",
+    "estimated_arrival": "2026-03-06T07:33:36Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0197",
+    "supplier_id": "SUP-ID-001",
+    "product_id": "PRD-002",
+    "status": "delivered",
+    "origin_port": "Tanjung Priok",
+    "destination_port": "Hamburg",
+    "origin_location": {
+      "lat": -6.1,
+      "lon": 106.85
+    },
+    "destination_location": {
+      "lat": 53.5511,
+      "lon": 9.9937
+    },
+    "delay_hours": 0.0,
+    "quantity": 925,
+    "@timestamp": "2026-02-16T08:15:31Z",
+    "estimated_arrival": "2026-03-01T00:07:25Z",
+    "actual_arrival": "2026-02-26T13:34:08Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0198",
+    "supplier_id": "SUP-MX-001",
+    "product_id": "PRD-006",
+    "status": "in_transit",
+    "origin_port": "Manzanillo",
+    "destination_port": "Rotterdam",
+    "origin_location": {
+      "lat": 19.0522,
+      "lon": -104.3148
+    },
+    "destination_location": {
+      "lat": 51.9225,
+      "lon": 4.4792
+    },
+    "delay_hours": 11.9,
+    "quantity": 249,
+    "@timestamp": "2026-02-25T23:39:53Z",
+    "estimated_arrival": "2026-04-09T18:54:43Z",
+    "actual_arrival": null
+  },
+  {
+    "shipment_id": "SHP-BG-0199",
+    "supplier_id": "SUP-SG-001",
+    "product_id": "PRD-006",
+    "status": "delivered",
+    "origin_port": "Singapore",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 1.2966,
+      "lon": 103.8506
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 313,
+    "@timestamp": "2026-01-30T07:26:05Z",
+    "estimated_arrival": "2026-03-20T14:52:20Z",
+    "actual_arrival": "2026-02-22T16:13:36Z"
+  },
+  {
+    "shipment_id": "SHP-BG-0200",
+    "supplier_id": "SUP-IN-001",
+    "product_id": "PRD-008",
+    "status": "delivered",
+    "origin_port": "Chennai",
+    "destination_port": "Los Angeles",
+    "origin_location": {
+      "lat": 13.0827,
+      "lon": 80.2707
+    },
+    "destination_location": {
+      "lat": 33.7701,
+      "lon": -118.1937
+    },
+    "delay_hours": 0.0,
+    "quantity": 39,
+    "@timestamp": "2026-02-19T03:41:41Z",
+    "estimated_arrival": "2026-04-05T13:40:51Z",
+    "actual_arrival": "2026-02-24T02:06:12Z"
+  }
+]

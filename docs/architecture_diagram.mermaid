@@ -1,0 +1,61 @@
+flowchart TB
+    User([👤 Supply Chain Professional]) --> Agent
+
+    subgraph AgentBuilder["Elastic Agent Builder"]
+        Agent["🛡️ SupplyShield Agent\n(supplyshield)"]
+    end
+
+    subgraph Tools["ES|QL Tools"]
+        T1["🔍 detect_shipment_anomalies\nES|QL + LOOKUP JOINs"]
+        T2["💰 assess_revenue_impact\nES|QL + LOOKUP JOINs"]
+        T3["🔄 find_alternative_suppliers\nES|QL + suitability scoring"]
+        T4["📰 search_disruption_news\nHybrid semantic + keyword"]
+    end
+
+    subgraph Workflow["Elastic Workflow"]
+        W1["⚡ execute_recovery_workflow\nsupply_chain_recovery"]
+    end
+
+    subgraph Indices["Elasticsearch Indices"]
+        direction TB
+        I1["📦 sc_shipments\n(geo_point, delay_hours)"]
+        I2["🏭 sc_suppliers\n[mode: lookup]"]
+        I3["📰 sc_news\n(dense_vector 384d cosine)"]
+        I4["📋 sc_orders\n(revenue_value, status)"]
+        I5["🏷️ sc_products\n[mode: lookup]"]
+        I6["📝 sc_actions_log\n(audit trail)"]
+        I7["📄 sc_purchase_orders\n(written by workflow)"]
+    end
+
+    Agent --> T1
+    Agent --> T2
+    Agent --> T3
+    Agent --> T4
+    Agent --> W1
+
+    T1 -->|"FROM sc_shipments"| I1
+    T1 -->|"LOOKUP JOIN ON supplier_id"| I2
+    T1 -->|"LOOKUP JOIN ON product_id"| I5
+
+    T2 -->|"FROM sc_orders"| I4
+    T2 -->|"LOOKUP JOIN ON product_id"| I5
+    T2 -->|"LOOKUP JOIN ON supplier_id"| I2
+
+    T3 -->|"FROM sc_suppliers"| I2
+
+    T4 -->|"hybrid search"| I3
+
+    W1 -->|"elasticsearch.index"| I7
+    W1 -->|"elasticsearch.index"| I6
+
+    classDef esqlTool fill:#1e6fa3,stroke:#0d4f7a,color:#fff
+    classDef searchTool fill:#2d7f5e,stroke:#1a5a3f,color:#fff
+    classDef workflowTool fill:#b35c00,stroke:#7a3d00,color:#fff
+    classDef lookupIndex fill:#4a4a9a,stroke:#2a2a6a,color:#fff
+    classDef standardIndex fill:#555,stroke:#333,color:#fff
+
+    class T1,T2,T3 esqlTool
+    class T4 searchTool
+    class W1 workflowTool
+    class I2,I5 lookupIndex
+    class I1,I3,I4,I6,I7 standardIndex

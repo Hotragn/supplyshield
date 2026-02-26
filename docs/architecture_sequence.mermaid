@@ -1,0 +1,58 @@
+%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#1a56db', 'primaryTextColor': '#fff', 'lineColor': '#6b7280'}}}%%
+
+sequenceDiagram
+    autonumber
+    actor Analyst as Supply Chain Analyst
+    participant Agent as SupplyShield Agent<br/>(Kibana Agent Builder)
+    participant DSA as detect_shipment_anomalies<br/>(ES|QL Tool)
+    participant SDN as search_disruption_news<br/>(Index Search Tool)
+    participant ARI as assess_revenue_impact<br/>(ES|QL Tool)
+    participant FAS as find_alternative_suppliers<br/>(ES|QL Tool)
+    participant WF as supply_chain_recovery<br/>(Elastic Workflow)
+    participant ES as Elasticsearch<br/>(Serverless)
+
+    Analyst->>Agent: "Shenzhen port congestion - any affected shipments?"
+
+    Note over Agent: Step 1 — DETECT
+    Agent->>DSA: Call(delay_threshold=24)
+    DSA->>ES: FROM sc_shipments WHERE delay_hours > 24<br/>LOOKUP JOIN sc_suppliers ON supplier_id<br/>LOOKUP JOIN sc_products ON product_id
+    ES-->>DSA: 14 rows (SUP-SZ-001, SUP-SZ-002, SUP-SZ-003)
+    DSA-->>Agent: 14 delayed shipments, avg 143h delay
+
+    Note over Agent: Step 2 — CORROBORATE
+    Agent->>SDN: Search("Shenzhen port congestion 2026")
+    SDN->>ES: Hybrid search on sc_news (keyword + kNN)
+    ES-->>SDN: 3 articles, severity=high, sentiment=-0.76
+    SDN-->>Agent: Port backlog 8–10 days, confirmed
+
+    Agent-->>Analyst: "14 shipments delayed across 3 suppliers (SUP-SZ-001, -002, -003).<br/>3 news articles confirm Shenzhen port congestion. Avg delay 143h, max 312h.<br/>Want me to assess revenue impact?"
+
+    Analyst->>Agent: "Yes - focus on Shenzhen Microtech first"
+
+    Note over Agent: Step 3 — ASSESS
+    Agent->>ARI: Call(affected_supplier_id="SUP-SZ-001")
+    ARI->>ES: FROM sc_orders WHERE status="active"<br/>LOOKUP JOIN sc_products ON product_id<br/>WHERE primary_supplier_id == "SUP-SZ-001"<br/>LOOKUP JOIN sc_suppliers ON primary_supplier_id
+    ES-->>ARI: revenue_at_risk=$4.2M, orders=31, customers=8
+    ARI-->>Agent: $4.2M at risk, 31 orders, 8 customers, earliest due in 8 days
+
+    Agent-->>Analyst: "$4.2M revenue at risk from SUP-SZ-001 alone.<br/>31 active orders, 8 customers, earliest due Feb 27. Find alternatives?"
+
+    Analyst->>Agent: "Yes - microcontrollers, avoid East Asia"
+
+    Note over Agent: Step 4 — SOURCE ALTERNATIVES
+    Agent->>FAS: Call(required_capability="microcontrollers",<br/>excluded_supplier_id="SUP-SZ-001",<br/>excluded_region="East Asia")
+    FAS->>ES: FROM sc_suppliers WHERE active=true<br/>AND capabilities LIKE "microcontrollers"<br/>EVAL suitability_score=...
+    ES-->>FAS: 5 ranked alternatives
+    FAS-->>Agent: Top: Viet Components (score 84.2, 18d, +10%), Penang TechFab (81.5, 21d, +12%)
+
+    Agent-->>Analyst: "Top 2: Viet Components Manufacturing (Vietnam, score 84.2, 18-day lead, +10% cost);<br/>Penang TechFab Malaysia (81.5, 21 days, +12%). Want me to create a PO with Viet Components?"
+
+    Analyst->>Agent: "Yes - 200 units SmartWatch Pro components"
+
+    Note over Agent: Step 5 — ACT (after confirmation)
+    Agent->>WF: Trigger supply_chain_recovery<br/>(supplier=SUP-VIET-001, qty=200, product=SmartWatch Pro)
+    WF->>ES: Index doc → sc_purchase_orders (PO-2026-0042)
+    WF->>ES: Index doc → sc_actions_log (action=recovery_po_created)
+    WF-->>Agent: PO-2026-0042 created, action logged
+
+    Agent-->>Analyst: "Done. PO-2026-0042 created with Viet Components for 200 units SmartWatch Pro.<br/>Action logged to audit trail. Total time: ~3 minutes."

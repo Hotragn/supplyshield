@@ -1,0 +1,86 @@
+%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#1a56db', 'primaryTextColor': '#fff', 'lineColor': '#6b7280'}}}%%
+
+flowchart LR
+    subgraph INGEST["DATA INGESTION LAYER"]
+        direction TB
+        GEN["generate_data.py<br/>Synthetic data gen<br/>(seed=42, Faker)"]
+        SETUP["setup_indices.py<br/>Index creation<br/>+ mapping definitions"]
+        LOAD["load_data.py<br/>elasticsearch.helpers.bulk<br/>575 documents"]
+    end
+
+    subgraph STORAGE["ELASTICSEARCH STORAGE LAYER"]
+        direction TB
+        subgraph LOOKUP_IDX["LOOKUP INDICES (mode: lookup)"]
+            direction LR
+            SUP[("sc_suppliers<br/>33 docs<br/>keyword + geo_point<br/>reliability/capacity scores")]
+            PROD[("sc_products<br/>10 docs<br/>keyword<br/>primary_supplier_id")]
+        end
+        subgraph FACT_IDX["FACT INDICES (standard)"]
+            direction LR
+            SHIP[("sc_shipments<br/>214 docs<br/>keyword + date<br/>delay_hours float")]
+            ORD[("sc_orders<br/>300 docs<br/>keyword + date<br/>revenue_value float")]
+            NEWS[("sc_news<br/>18 docs<br/>text + dense_vector<br/>384d cosine")]
+        end
+        subgraph WRITE_IDX["WRITE INDICES (agent output)"]
+            direction LR
+            ACTS[("sc_actions_log<br/>audit trail")]
+            POS[("sc_purchase_orders<br/>recovery POs")]
+        end
+    end
+
+    subgraph QUERY["QUERY LAYER (ES|QL + Hybrid Search)"]
+        direction TB
+        Q1["detect_shipment_anomalies<br/>FROM sc_shipments<br/>LOOKUP JOIN sc_suppliers<br/>LOOKUP JOIN sc_products<br/>WHERE delay_hours > ?delay_threshold<br/>STATS BY supplier, port"]
+        Q2["assess_revenue_impact<br/>FROM sc_orders<br/>LOOKUP JOIN sc_products<br/>WHERE primary_supplier_id == ?id<br/>LOOKUP JOIN sc_suppliers<br/>STATS SUM(revenue_value)"]
+        Q3["find_alternative_suppliers<br/>FROM sc_suppliers<br/>EVAL suitability_score = ...<br/>SORT suitability_score DESC"]
+        Q4["search_disruption_news<br/>Hybrid (kNN + BM25)<br/>body_embedding: dense_vector<br/>fields: title, body"]
+    end
+
+    subgraph AGENT_LAYER["AGENT LAYER (Elastic Agent Builder)"]
+        direction TB
+        AGENT["SupplyShield Agent<br/>Reasoning model<br/>Tool selection + orchestration<br/>↕ parameterized ?queries"]
+    end
+
+    subgraph ACTION_LAYER["ACTION LAYER (Elastic Workflow)"]
+        WF_DEF["supply_chain_recovery<br/>Inputs: supplier_id, product_ids, qty, reason<br/>Step 1: create PO → sc_purchase_orders<br/>Step 2: log action → sc_actions_log"]
+    end
+
+    subgraph CONSUMER["CONSUMER LAYER"]
+        direction LR
+        KIBANA_UI["Kibana Chat UI"]
+        API_CLIENT["Kibana API<br/>/api/agent_builder/chat"]
+        MCP_CLIENT["MCP Client<br/>Claude Desktop etc"]
+    end
+
+    GEN --> LOAD
+    SETUP --> LOAD
+    LOAD --> SUP & PROD & SHIP & ORD & NEWS
+
+    SUP & PROD --> Q1 & Q2 & Q3
+    SHIP --> Q1
+    ORD --> Q2
+    NEWS --> Q4
+
+    Q1 & Q2 & Q3 & Q4 --> AGENT
+    AGENT --> WF_DEF
+    WF_DEF --> ACTS & POS
+
+    KIBANA_UI & API_CLIENT & MCP_CLIENT --> AGENT
+
+    classDef ingestStyle fill:#7c3aed,stroke:#6d28d9,color:#fff
+    classDef lookupStyle fill:#1e429f,stroke:#1a56db,color:#fff
+    classDef factStyle fill:#374151,stroke:#4b5563,color:#e5e7eb
+    classDef writeStyle fill:#1f2937,stroke:#374151,color:#9ca3af
+    classDef queryStyle fill:#065f46,stroke:#047857,color:#fff
+    classDef agentStyle fill:#1a56db,stroke:#1e429f,color:#fff
+    classDef actionStyle fill:#d97706,stroke:#b45309,color:#fff
+    classDef clientStyle fill:#6b7280,stroke:#4b5563,color:#fff
+
+    class GEN,SETUP,LOAD ingestStyle
+    class SUP,PROD lookupStyle
+    class SHIP,ORD,NEWS factStyle
+    class ACTS,POS writeStyle
+    class Q1,Q2,Q3,Q4 queryStyle
+    class AGENT agentStyle
+    class WF_DEF actionStyle
+    class KIBANA_UI,API_CLIENT,MCP_CLIENT clientStyle

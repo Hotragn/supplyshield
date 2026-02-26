@@ -1,0 +1,87 @@
+%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#1a56db', 'primaryTextColor': '#fff', 'primaryBorderColor': '#1e429f', 'lineColor': '#4b5563', 'secondaryColor': '#1e429f', 'tertiaryColor': '#111827'}}}%%
+
+flowchart TB
+    subgraph USER["👤 Supply Chain Analyst"]
+        direction TB
+        U1["Natural Language Query<br/>'Shenzhen port disruption?'"]
+    end
+
+    subgraph KIBANA["🔷 Elastic Kibana — Agent Builder"]
+        direction TB
+        AGENT["SupplyShield Agent<br/>― reasoning model ―<br/>Multi-step orchestrator<br/>System prompt + tool selection"]
+
+        subgraph TOOLS["Custom Tools"]
+            direction LR
+            T1["detect_shipment_anomalies<br/>ES|QL + LOOKUP JOIN"]
+            T2["assess_revenue_impact<br/>ES|QL + LOOKUP JOIN"]
+            T3["find_alternative_suppliers<br/>ES|QL + weighted score"]
+            T4["search_disruption_news<br/>index_search / hybrid"]
+        end
+    end
+
+    subgraph ELASTIC["⚡ Elasticsearch Serverless"]
+        direction TB
+        subgraph FACT["Fact Indices"]
+            I1[("sc_shipments<br/>214 docs")]
+            I2[("sc_orders<br/>300 docs")]
+            I3[("sc_news<br/>18 docs<br/>384-dim vectors")]
+        end
+        subgraph DIM["Lookup Indices"]
+            I4[("sc_suppliers<br/>33 docs<br/>mode: lookup")]
+            I5[("sc_products<br/>10 docs<br/>mode: lookup")]
+        end
+        subgraph WRITE["Write Indices"]
+            I6[("sc_actions_log")]
+            I7[("sc_purchase_orders")]
+        end
+        subgraph WF["Elastic Workflow"]
+            W1["supply_chain_recovery<br/>PO creation + audit"]
+        end
+    end
+
+    subgraph OUTPUT["📊 Agent Response"]
+        direction LR
+        R1["Disruption Report<br/>14 shipments delayed"]
+        R2["Revenue at Risk<br/>$10M+ flagged"]
+        R3["Ranked Alternatives<br/>Top 5 suppliers"]
+        R4["Recovery Action<br/>PO created + logged"]
+    end
+
+    U1 --> AGENT
+    AGENT --> T1
+    AGENT --> T2
+    AGENT --> T3
+    AGENT --> T4
+    T1 -- "LOOKUP JOIN" --> I4
+    T1 -- "LOOKUP JOIN" --> I5
+    T1 --- I1
+    T2 -- "LOOKUP JOIN" --> I4
+    T2 -- "LOOKUP JOIN" --> I5
+    T2 --- I2
+    T3 --- I4
+    T4 -- "hybrid search" --> I3
+    AGENT -- "Workflow trigger<br/>(user confirmed)" --> W1
+    W1 --> I6
+    W1 --> I7
+    AGENT --> R1
+    AGENT --> R2
+    AGENT --> R3
+    AGENT --> R4
+
+    classDef userStyle fill:#7c3aed,stroke:#6d28d9,color:#fff
+    classDef agentStyle fill:#1a56db,stroke:#1e429f,color:#fff
+    classDef toolStyle fill:#0e9f6e,stroke:#057a55,color:#fff
+    classDef factIdx fill:#374151,stroke:#4b5563,color:#e5e7eb
+    classDef dimIdx fill:#1e429f,stroke:#1a56db,color:#fff
+    classDef writeIdx fill:#4b5563,stroke:#6b7280,color:#e5e7eb
+    classDef wfStyle fill:#d97706,stroke:#b45309,color:#fff
+    classDef outputStyle fill:#065f46,stroke:#047857,color:#fff
+
+    class U1 userStyle
+    class AGENT agentStyle
+    class T1,T2,T3,T4 toolStyle
+    class I1,I2,I3 factIdx
+    class I4,I5 dimIdx
+    class I6,I7 writeIdx
+    class W1 wfStyle
+    class R1,R2,R3,R4 outputStyle

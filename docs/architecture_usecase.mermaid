@@ -1,0 +1,87 @@
+%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#1a56db', 'primaryTextColor': '#fff', 'lineColor': '#6b7280'}}}%%
+
+%%
+  SupplyShield Use Case Diagram
+  Actors: Supply Chain Analyst, SupplyShield Agent, Elasticsearch
+%%
+
+flowchart TB
+    subgraph ACTORS["ACTORS"]
+        direction LR
+        ANALYST(["👤 Supply Chain\nAnalyst"])
+        AGENT(["🤖 SupplyShield\nAgent"])
+        ES_SYS(["⚡ Elasticsearch\nServerless"])
+        WF_SYS(["⚙️ Elastic\nWorkflows"])
+    end
+
+    subgraph UC["USE CASES"]
+        direction TB
+        subgraph UC1["Disruption Detection"]
+            UC1A["UC-01: Report port or regional disruption"]
+            UC1B["UC-02: Detect delayed shipments by delay threshold"]
+            UC1C["UC-03: Corroborate disruption with news intelligence"]
+        end
+        subgraph UC2["Impact Assessment"]
+            UC2A["UC-04: Identify affected suppliers from shipment data"]
+            UC2B["UC-05: Calculate revenue at risk per supplier"]
+            UC2C["UC-06: Identify affected customers and earliest due dates"]
+        end
+        subgraph UC3["Recovery Planning"]
+            UC3A["UC-07: Search for alternative suppliers by capability"]
+            UC3B["UC-08: Filter alternatives by region exclusion"]
+            UC3C["UC-09: Rank alternatives by suitability score"]
+            UC3D["UC-10: Present tradeoff analysis to analyst"]
+        end
+        subgraph UC4["Recovery Execution"]
+            UC4A["UC-11: Review and approve recovery action"]
+            UC4B["UC-12: Create replacement purchase order"]
+            UC4C["UC-13: Log recovery action to audit trail"]
+        end
+    end
+
+    ANALYST -->|"initiates"| UC1A
+    ANALYST -->|"reviews"| UC2B
+    ANALYST -->|"selects"| UC3D
+    ANALYST -->|"approves"| UC4A
+
+    AGENT -->|"orchestrates"| UC1B
+    AGENT -->|"orchestrates"| UC1C
+    AGENT -->|"orchestrates"| UC2A
+    AGENT -->|"orchestrates"| UC2B
+    AGENT -->|"orchestrates"| UC2C
+    AGENT -->|"orchestrates"| UC3A
+    AGENT -->|"orchestrates"| UC3B
+    AGENT -->|"orchestrates"| UC3C
+    AGENT -->|"synthesizes"| UC3D
+    AGENT -->|"triggers (post-confirmation)"| UC4B
+    AGENT -->|"triggers"| UC4C
+
+    ES_SYS -->|"provides data for"| UC1B
+    ES_SYS -->|"provides data for"| UC1C
+    ES_SYS -->|"provides data for"| UC2B
+    ES_SYS -->|"provides data for"| UC3A
+
+    WF_SYS -->|"executes"| UC4B
+    WF_SYS -->|"executes"| UC4C
+
+    UC1A -->|"<<includes>>"| UC1B
+    UC1B -->|"<<extends>>"| UC1C
+    UC2A -->|"<<includes>>"| UC2B
+    UC2B -->|"<<includes>>"| UC2C
+    UC3A -->|"<<includes>>"| UC3B
+    UC3B -->|"<<includes>>"| UC3C
+    UC3C -->|"<<includes>>"| UC3D
+    UC4A -->|"<<includes>>"| UC4B
+    UC4B -->|"<<includes>>"| UC4C
+
+    classDef actorStyle fill:#7c3aed,stroke:#6d28d9,color:#fff,shape:circle
+    classDef detectionStyle fill:#065f46,stroke:#047857,color:#fff
+    classDef assessStyle fill:#1e429f,stroke:#1a56db,color:#fff
+    classDef recoveryStyle fill:#92400e,stroke:#d97706,color:#fff
+    classDef execStyle fill:#374151,stroke:#6b7280,color:#e5e7eb
+
+    class ANALYST,AGENT,ES_SYS,WF_SYS actorStyle
+    class UC1A,UC1B,UC1C detectionStyle
+    class UC2A,UC2B,UC2C assessStyle
+    class UC3A,UC3B,UC3C,UC3D recoveryStyle
+    class UC4A,UC4B,UC4C execStyle

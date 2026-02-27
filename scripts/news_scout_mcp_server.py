@@ -160,6 +160,44 @@ def query_disruption_news(query: str, region: str = "", min_severity: str = "") 
         return json.dumps({"signal": "ERROR", "message": str(e), "articles": []})
 
 
+@mcp.tool()
+def create_purchase_order(supplier_id: str, product_name: str, quantity: int) -> str:
+    """
+    Triggers the automated recovery workflow to create a purchase order with an alternative supplier.
+    Use this only after the user explicitly says 'yes' or confirms the action.
+    This creates an immutable audit trail entry.
+
+    Args:
+        supplier_id: ID of the alternative supplier chosen (e.g. SUP-VN-001)
+        product_name: Name of the product/component to order
+        quantity: Number of units to order
+    """
+    import datetime
+    try:
+        doc = {
+            "action": "CREATE_PO",
+            "supplier_id": supplier_id,
+            "product_name": product_name,
+            "quantity": quantity,
+            "status": "triggered",
+            "timestamp": datetime.datetime.utcnow().isoformat() + "Z"
+        }
+        res = es.index(index="sc_actions_log", document=doc)
+        
+        # In a real system this would call the ERP API. For the demo, we log it.
+        po_number = f"PO-2026-00{res['_version'] + 42 if '_version' in res else 42}"
+        return json.dumps({
+            "status": "success",
+            "po_number": po_number,
+            "message": f"Purchase order {po_number} created successfully and logged to audit trail.",
+            "details": doc,
+            "es_doc_id": res["_id"]
+        }, indent=2)
+    except Exception as e:
+        log.error(f"Failed to create PO: {e}")
+        return json.dumps({"status": "error", "message": f"Failed to execute workflow: {str(e)}"})
+
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     # Test ES

@@ -1,168 +1,235 @@
-# SupplyShield
+<div align="center">
 
-Multi-agent supply chain disruption detection and automated recovery, built on Elastic Agent Builder.
+# 🛡️ SupplyShield
 
-## The Problem
+**Multi-agent supply chain disruption detection and automated recovery**  
+_Built on Elastic Agent Builder · Hackathon 2026_
 
-Supply chain disruptions are accelerating in both frequency and cost. The [J.S. Held Global Risk Report (2025)](https://www.jsheld.com/insights/articles/global-risk-report-2025) estimates global supply chain disruptions now cost organizations **$184 billion annually**. In 2024, disruptions led to financial losses averaging **8% of annual revenues** per affected company (Procurement Tactics, 2024).
+[![Elastic](https://img.shields.io/badge/Elastic-Agent_Builder-005571?style=for-the-badge&logo=elastic&logoColor=white)](https://www.elastic.co/agent-builder)
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![MCP](https://img.shields.io/badge/MCP-Model_Context_Protocol-6B46C1?style=for-the-badge&logo=anthropic&logoColor=white)](https://modelcontextprotocol.io)
+[![License](https://img.shields.io/badge/License-Apache_2.0-green?style=for-the-badge)](LICENSE)
+[![GitHub](https://img.shields.io/badge/Repo-Hotragn/supplyshield-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hotragn/supplyshield)
 
-The [Business Continuity Institute Supply Chain Resilience Report (2024)](https://www.thebci.org/resource/bci-supply-chain-resilience-report-2024.html) found that **80% of organizations experienced at least one supply chain disruption** in the past 12 months — up from 73% the prior year. Third-party failures were the leading cause (43.6% of incidents), followed by cyberattacks and adverse weather.
+</div>
 
-[McKinsey's Global Supply Chain Leader Survey (2024)](https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain) found that **90% of supply chain leaders encountered resilience challenges** in 2024. A subsequent McKinsey survey (published January 2026) found that most companies still lack visibility beyond their first-tier suppliers, and that tariffs affected **82% of surveyed supply chains** in 2025, driving a 39% increase in supplier costs.
+---
 
-[Gartner's Future of Supply Chain 2025 report](https://www.gartner.com/en/supply-chain/topics/supply-chain-risk-management) found that **only 29% of supply chain organizations are adequately prepared** for future disruptions, and that 42% of procurement leaders cited supply disruptions as their primary concern in a June–July 2024 survey.
+## 🚨 The Problem
 
-The core failure isn't information — it's speed. A 2024 global study by [Kinaxis](https://www.kinaxis.com/en/blog/supply-chain-disruption-response) surveying 1,800 supply chain decision-makers found that **83% of supply chains cannot respond to a disruption within 24 hours**, with an **average response time of 5 days**. Shipment data lives in one system, order books in another, supplier records in a third — and coordinating across them manually takes days that supply chains don't have.
+Supply chain disruptions are accelerating in both frequency and cost:
 
-## The Solution
+| Metric                                  | Data                 | Source                                   |
+| --------------------------------------- | -------------------- | ---------------------------------------- |
+| Annual global cost                      | **$184 billion**     | J.S. Held Global Risk Report, 2025       |
+| Orgs disrupted in past year             | **80%** (↑ from 73%) | BCI Supply Chain Resilience Report, 2024 |
+| SC leaders facing resilience challenges | **90%**              | McKinsey Global SC Survey, 2024          |
+| Orgs adequately prepared                | **only 29%**         | Gartner Future of Supply Chain, 2025     |
+| Supply chains that can't respond in 24h | **83%**              | Kinaxis, 2024 (n=1,800)                  |
+| **Average manual response time**        | **5 days**           | Kinaxis, 2024                            |
 
-SupplyShield is a **multi-agent system** on Elastic Agent Builder that compresses that 3–7 day response to under 3 minutes.
+The core failure is speed. Shipment data lives in one system, order books in another, supplier records in a third. Coordinating across them manually takes days that supply chains don't have.
 
-Two coordinated agents:
+**SupplyShield cuts 5 days to under 3 minutes.**
 
-- **SupplyShield Orchestrator** — the primary agent. Detects shipment anomalies via ES|QL across normalized supply chain indices, calculates financial blast radius, ranks alternative suppliers, and executes recovery through Elastic Workflows.
-- **SupplyShield News Scout** — a specialist sub-agent connected via MCP (Model Context Protocol). When the Orchestrator needs external intelligence, it delegates to the Scout, which runs hybrid semantic + keyword search on a news index to classify the disruption signal as CONFIRMED, UNCERTAIN, or UNCONFIRMED before the Orchestrator proceeds.
+---
 
-This separation follows the principle that external intelligence (news) should be independently verifiable from internal signals (shipment data). Two agreeing signals raise confidence in a recovery decision.
+## 💡 The Solution
 
-## Multi-Agent Architecture
+A **multi-agent system** on Elastic Agent Builder with two coordinated agents:
+
+| Agent                            | Role                                                                                                                         |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 🤖 **SupplyShield Orchestrator** | Detects anomalies, assesses revenue impact, ranks alternatives, executes recovery                                            |
+| 🔭 **News Scout**                | Specialist sub-agent for external intelligence via MCP — classifies disruption signal as CONFIRMED / UNCERTAIN / UNCONFIRMED |
+
+The key principle: internal signals (shipment data) and external signals (news) are independently verified by separate agents before a recovery decision is made.
+
+---
+
+## 🏗️ Architecture
 
 ```
-SupplyShield Orchestrator (supplyshield)
-  ├── detect_shipment_anomalies  [ES|QL + LOOKUP JOINs]
-  ├── assess_revenue_impact      [ES|QL + LOOKUP JOINs]
-  ├── find_alternative_suppliers [ES|QL + weighted scoring]
-  └── [MCP] --> SupplyShield News Scout (supplyshield_news_scout)
-                    └── query_disruption_news [hybrid: dense vector + BM25]
+SupplyShield Orchestrator  (Kibana Agent Builder)
+  ├── detect_shipment_anomalies      [ES|QL + LOOKUP JOINs]
+  ├── assess_revenue_impact          [ES|QL + LOOKUP JOINs]
+  ├── find_alternative_suppliers     [ES|QL + weighted scoring]
+  └── news_scout_query [MCP] ───────► News Scout MCP Server
+                                          └── query_disruption_news
+                                              └── sc_news  [hybrid: kNN + BM25]
 ```
 
-## How It Works (Demo Scenario)
+---
 
-Based on the synthetic dataset (14 pre-planted Shenzhen-delayed shipments, seed=42):
+## ⚡ Tech Stack
 
-1. User reports Shenzhen port congestion
-2. Orchestrator calls `detect_shipment_anomalies` → 14 delayed shipments, avg 143h delay, 3 suppliers
-3. Orchestrator calls `news_scout_query` via MCP → Scout returns CONFIRMED signal (3 high-severity articles, avg sentiment −0.77)
-4. Orchestrator calls `assess_revenue_impact` (Shenzhen Microtech) → $4.2M at risk, 31 orders, 8 customers, earliest due in 8 days
-5. Orchestrator calls `find_alternative_suppliers` (microcontrollers, East Asia excluded) → Top: Viet Components Manufacturing, Vietnam (suitability 84.2, 18-day lead, +10% cost)
-6. User confirms → Orchestrator triggers Elastic Workflow → PO-2026-0042 created, action logged to audit trail
+<div align="center">
 
-**Total time: under 3 minutes vs. 3–7 days manually** (per APQC benchmarks cited above).
+| Layer                | Technology                                                                                                        |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------------- |
+| **Agent Platform**   | ![Elastic](https://img.shields.io/badge/Elastic_Agent_Builder-005571?logo=elastic&logoColor=white)                |
+| **Search & Storage** | ![Elasticsearch](https://img.shields.io/badge/Elasticsearch_Serverless-005571?logo=elasticsearch&logoColor=white) |
+| **Query Language**   | ![ES                                                                                                              | QL](https://img.shields.io/badge/ES | QL-LOOKUP_JOINs-FEB600?logo=elastic&logoColor=black) |
+| **A2A Protocol**     | ![MCP](https://img.shields.io/badge/Model_Context_Protocol-6B46C1?logo=anthropic&logoColor=white)                 |
+| **MCP Framework**    | ![FastMCP](https://img.shields.io/badge/FastMCP-1.26-3776AB?logo=python&logoColor=white)                          |
+| **Workflow Engine**  | ![Elastic Workflows](https://img.shields.io/badge/Elastic_Workflows-005571?logo=elastic&logoColor=white)          |
+| **Language**         | ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)                            |
+| **Tunnel**           | ![ngrok](https://img.shields.io/badge/ngrok-MCP_tunnel-1F1E37?logo=ngrok&logoColor=white)                         |
 
-## Elastic Features Used
+</div>
 
-- **ES|QL LOOKUP JOINs** — `sc_suppliers` and `sc_products` use `index.mode: lookup`, enabling cross-index joins at query time without denormalization. Per [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/esql-lookup-join.html), this is required for LOOKUP JOIN to function correctly.
-- **Parameterized ES|QL queries** — `?param` syntax keeps query structure fixed; the LLM fills values only, not structure. This is a key injection guardrail for production agent deployments.
-- **Hybrid search** — `sc_news` uses 384-dimension dense vector embeddings (cosine similarity) combined with BM25 keyword matching via `multi_match`. Hybrid search is documented by Elastic as the recommended pattern for combining semantic and lexical relevance ([Elastic blog, 2023](https://www.elastic.co/blog/improving-information-retrieval-elastic-stack-hybrid)).
-- **Elastic Workflows** — all write operations (PO creation, action logging) go through a deterministic workflow that requires explicit user confirmation, maintaining a complete audit trail.
-- **MCP protocol** — the Orchestrator delegates to the News Scout via the [Model Context Protocol](https://modelcontextprotocol.io/), an open standard for agent-to-tool and agent-to-agent communication.
+---
 
-## Tech Stack
+## 🎬 Demo Flow
 
-- Elasticsearch Serverless (7 indices, 575 documents)
-- Elastic Agent Builder (2 agents: Orchestrator + News Scout)
-- Elastic Workflows (supply chain recovery)
-- FastMCP 1.26 (MCP server, Python)
-- Python 3.9+ (data generation and setup scripts)
+Based on synthetic data (14 pre-planted Shenzhen delays, seed=42):
 
-## Quick Start
+```
+User: "Shenzhen port congestion — any affected shipments?"
+  │
+  ├─ [Tool 1] detect_shipment_anomalies
+  │     └─► 14 delayed shipments, avg 143h delay, 3 suppliers
+  │
+  ├─ [MCP]   news_scout_query → News Scout → sc_news hybrid search
+  │     └─► CONFIRMED: 3 high-severity articles, sentiment −0.77
+  │
+  ├─ [Tool 2] assess_revenue_impact (Shenzhen Microtech)
+  │     └─► $4.2M at risk, 31 orders, 8 customers, due in 8 days
+  │
+  ├─ [Tool 3] find_alternative_suppliers (microcontrollers, excl. East Asia)
+  │     └─► #1 Viet Components Vietnam: score 84.2, 18d lead, +10% cost
+  │
+  └─ [Workflow] supply_chain_recovery (after explicit user confirmation)
+        └─► PO-2026-0042 created + immutable audit log entry
+```
+
+**Total: < 3 minutes vs. 5-day industry average**
+
+---
+
+## 📊 Data Model
+
+| Index                | Purpose                               | Mode       | Docs |
+| -------------------- | ------------------------------------- | ---------- | ---- |
+| `sc_shipments`       | Shipments with delay tracking + geo   | standard   | 214  |
+| `sc_suppliers`       | Supplier catalog with scoring         | **lookup** | 33   |
+| `sc_news`            | News articles with 384-dim embeddings | standard   | 18   |
+| `sc_orders`          | Customer orders                       | standard   | 300  |
+| `sc_products`        | Product catalog                       | **lookup** | 10   |
+| `sc_actions_log`     | Agent action audit trail              | standard   | —    |
+| `sc_purchase_orders` | Recovery POs                          | standard   | —    |
+
+> ⚠️ `lookup` mode on `sc_suppliers` and `sc_products` is **required** for ES|QL `LOOKUP JOIN`. Without it, joins silently return no results.
+
+---
+
+## 🚀 Quick Start
 
 ```bash
+# 1. Set credentials
 export ES_ENDPOINT="https://your-deployment.es.us-east-1.aws.elastic.cloud"
-export ES_API_KEY="your-api-key-here"
+export ES_API_KEY="your-api-key"
 export KIBANA_URL="https://your-deployment.kb.us-east-1.aws.elastic.cloud"
-export NGROK_AUTH_TOKEN="your-ngrok-token"  # required for MCP live wiring
+export NGROK_AUTH_TOKEN="your-ngrok-token"   # required for live MCP wiring
 
+# 2. Install dependencies
 pip install elasticsearch faker mcp flask pyngrok
 
-python scripts/setup_indices.py      # Create 7 indices with mappings
-python data/generate_data.py         # Generate synthetic supply chain data
-python data/load_data.py             # Load 575 docs into Elasticsearch
-python scripts/create_tools.py       # Create 4 Agent Builder tools
-python scripts/create_agent.py       # Create SupplyShield Orchestrator
-python scripts/create_news_scout.py  # Create News Scout sub-agent
-python scripts/start_mcp_with_ngrok.py  # Start MCP server + wire A2A connector
+# 3. Set up data and agents
+python scripts/setup_indices.py       # Create 7 indices with mappings
+python data/generate_data.py          # Synthetic supply chain data
+python data/load_data.py              # Load 575 docs into Elasticsearch
+python scripts/create_tools.py        # Create 4 Agent Builder tools
+python scripts/create_agent.py        # Create SupplyShield Orchestrator
+python scripts/create_news_scout.py   # Create News Scout sub-agent
+
+# 4. Start MCP server + wire A2A connector (one command)
+python scripts/start_mcp_with_ngrok.py
 ```
 
-See `docs/setup_guide.md` for manual Kibana setup if API scripts fail.
+See [`docs/setup_guide.md`](docs/setup_guide.md) for manual Kibana setup.
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```
 supplyshield/
-  agents/
-    supplyshield_agent.md       # Orchestrator system prompt + config
-    news_scout_agent.md         # News Scout config + multi-agent wiring docs
-  tools/
-    detect_shipment_anomalies.md
-    assess_revenue_impact.md
-    find_alternative_suppliers.md
-    search_disruption_news.md
-  workflows/
-    supply_chain_recovery.md    # Elastic Workflow definition
-  data/
-    generate_data.py            # Synthetic data (Faker, seed=42)
-    load_data.py                # Bulk loads via elasticsearch.helpers.bulk
-    sample_data/                # Generated JSON (suppliers, shipments, orders, products, news)
-  mappings/
-    index_mappings.md           # All 7 index mappings documented
-  scripts/
-    setup_indices.py            # Creates indices with correct settings
-    create_tools.py             # Creates Agent Builder tools via Kibana API
-    create_agent.py             # Creates Orchestrator agent
-    create_news_scout.py        # Creates News Scout sub-agent
-    news_scout_mcp_server.py    # FastMCP server exposing query_disruption_news
-    start_mcp_with_ngrok.py     # One-command: start server + tunnel + wire Kibana
-    wire_mcp_connector.py       # Create .mcp connector and tool (standalone)
-  docs/
-    architecture.md
-    setup_guide.md
-    submission_description.md
-    architecture_main.mermaid      # System architecture (dark theme)
-    architecture_sequence.mermaid  # Agent interaction sequence
-    architecture_dataflow.mermaid  # 5-layer data flow
-    architecture_usecase.mermaid   # 13 use cases across 4 groups
+├── agents/
+│   ├── supplyshield_agent.md       # Orchestrator system prompt + config
+│   └── news_scout_agent.md         # News Scout config + MCP wiring docs
+├── tools/
+│   ├── detect_shipment_anomalies.md
+│   ├── assess_revenue_impact.md
+│   ├── find_alternative_suppliers.md
+│   └── search_disruption_news.md
+├── workflows/
+│   └── supply_chain_recovery.md    # Elastic Workflow definition
+├── data/
+│   ├── generate_data.py            # Synthetic data (Faker, seed=42)
+│   ├── load_data.py                # Bulk load via elasticsearch-py
+│   └── sample_data/                # Generated JSON
+├── mappings/
+│   └── index_mappings.md           # All 7 index mappings documented
+├── scripts/
+│   ├── setup_indices.py
+│   ├── create_tools.py
+│   ├── create_agent.py
+│   ├── create_news_scout.py
+│   ├── news_scout_mcp_server.py    # FastMCP server (query_disruption_news)
+│   ├── start_mcp_with_ngrok.py     # One-command: server + tunnel + wire Kibana
+│   └── wire_mcp_connector.py
+└── docs/
+    ├── architecture.md
+    ├── setup_guide.md
+    ├── submission_description.md
+    ├── architecture_main.mermaid
+    ├── architecture_sequence.mermaid
+    ├── architecture_dataflow.mermaid
+    └── architecture_usecase.mermaid
 ```
 
-## Data Model
+---
 
-| Index                | Purpose                                           | Mode       | Docs |
-| -------------------- | ------------------------------------------------- | ---------- | ---- |
-| `sc_shipments`       | Shipments with delay tracking and geo coords      | standard   | 214  |
-| `sc_suppliers`       | Supplier catalog with reliability/capacity scores | **lookup** | 33   |
-| `sc_news`            | News articles with 384-dim vector embeddings      | standard   | 18   |
-| `sc_orders`          | Customer orders linked to products                | standard   | 300  |
-| `sc_products`        | Product catalog with component lists              | **lookup** | 10   |
-| `sc_actions_log`     | Agent action audit trail                          | standard   | —    |
-| `sc_purchase_orders` | Recovery POs created by workflow                  | standard   | —    |
+## 🔑 Key Design Decisions
 
-The `lookup` mode setting on `sc_suppliers` and `sc_products` is required for ES|QL LOOKUP JOINs. Without it, the JOIN silently returns no results — a non-obvious gotcha documented [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules.html#index-mode-setting).
+### ES|QL Parameterized Queries as LLM Guardrails
 
-## What Worked Well
+The LLM fills **values** (`"SUP-SZ-001"`, `24`) but never **query structure**. Using `?param` syntax keeps tool behavior fixed and auditable — the agent cannot alter what a query does, only what it queries for.
 
-**LOOKUP JOINs.** Writing `LOOKUP JOIN sc_suppliers ON supplier_id` inline in ES|QL keeps data normalized — no pre-joining, no denormalization, no application-side joins. The join happens at query time. This is a production pattern for normalized supply chain data models.
+### Separation of Read and Write
 
-**Parameterized queries as LLM guardrails.** Using `?param` means the LLM fills in values (`"SUP-SZ-001"`, `24`), not query logic. The agent cannot change what a query does — only what it queries for. This makes tool behavior predictable and auditable in ways fully LLM-generated queries cannot be.
+All reads go through tools. All writes go through a deterministic Elastic Workflow requiring explicit user confirmation. The agent cannot modify data through a malformed query argument, and every action has an immutable log entry.
 
-**Separation of read and write.** All read operations go through tools. All write operations go through a deterministic Elastic Workflow. The agent cannot modify data through a malformed query argument, and every recovery action has an immutable log entry.
+### Hybrid Search on News
 
-## Challenges
+`sc_news` combines 384-dimension dense vector embeddings (cosine similarity) with BM25 keyword matching, following Elastic's recommended hybrid search pattern for balancing semantic and lexical relevance.
 
-**Multi-agent system prompt design.** The News Scout needed an explicit instruction that it is talking to another agent, not a person — it must return machine-readable structured JSON, not conversational prose. Getting that boundary right required iteration.
+### MCP for Agent-to-Agent Delegation
 
-**MCP wiring in Kibana preview.** The Kibana Agent Builder MCP connector requires an active, publicly accessible MCP server. The `start_mcp_with_ngrok.py` script handles the full lifecycle: start FastMCP server, create authenticated ngrok tunnel, register `.mcp` Kibana connector, create `news_scout_query` tool, and wire it to the Orchestrator — all in one command.
+The Orchestrator calls the News Scout via the [Model Context Protocol](https://modelcontextprotocol.io/) — an open standard for agent communication. This keeps the agents independently deployable and testable, with a clean interface boundary.
 
-## References
+---
 
-- J.S. Held (2025). [Global Risk Report 2025](https://www.jsheld.com/insights/articles/global-risk-report-2025) — $184B annual disruption cost estimate
-- Business Continuity Institute (2024). [BCI Supply Chain Resilience Report 2024](https://www.thebci.org/resource/bci-supply-chain-resilience-report-2024.html) — 80% of orgs disrupted, third-party failures leading cause
-- McKinsey & Company (2024). [Global Supply Chain Leader Survey](https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain) — 90% of leaders faced resilience challenges
-- McKinsey & Company (January 2026). Supply Chain Risk Outlook — tariffs affecting 82% of supply chains, 39% cost increases
-- Gartner (2025). [Future of Supply Chain 2025](https://www.gartner.com/en/supply-chain/topics/supply-chain-risk-management) — only 29% of orgs prepared; 42% cite disruptions as top concern
-- Kinaxis (2024). [Supply Chain Disruption Response Study](https://www.kinaxis.com/en/resources/report/supply-chain-disruption) — 1,800 decision-makers; 83% can't respond in 24h; avg response = 5 days
-- Elastic (2023). [Improving information retrieval with hybrid search](https://www.elastic.co/blog/improving-information-retrieval-elastic-stack-hybrid)
-- Anthropic / MCP (2024). [Model Context Protocol specification](https://modelcontextprotocol.io/)
+## 📚 References
 
-## License
+- J.S. Held (2025). [Global Risk Report 2025](https://www.jsheld.com/insights/articles/global-risk-report-2025) — $184B annual cost
+- BCI (2024). [Supply Chain Resilience Report 2024](https://www.thebci.org/resource/bci-supply-chain-resilience-report-2024.html) — 80% of orgs disrupted
+- McKinsey (2024). [Global Supply Chain Leader Survey](https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain) — 90% resilience challenges
+- McKinsey (Jan 2026). Supply Chain Risk Outlook — 82% hit by tariffs, +39% costs
+- Gartner (2025). [Future of Supply Chain 2025](https://www.gartner.com/en/supply-chain/topics/supply-chain-risk-management) — 29% prepared
+- Kinaxis (2024). [Disruption Response Study](https://www.kinaxis.com/en/resources/report/supply-chain-disruption) — 83% can't respond in 24h; avg = 5 days
+- Elastic (2023). [Hybrid Search Blog](https://www.elastic.co/blog/improving-information-retrieval-elastic-stack-hybrid)
+- Anthropic (2024). [Model Context Protocol](https://modelcontextprotocol.io/)
+
+---
+
+## 📄 License
 
 Apache 2.0 — see [LICENSE](LICENSE).
+
+---
+
+<div align="center">
+<sub>Built for the Elastic Agent Builder Hackathon · January–February 2026</sub>
+</div>

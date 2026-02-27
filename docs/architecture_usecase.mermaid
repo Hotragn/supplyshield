@@ -1,9 +1,6 @@
 %%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#1a56db', 'primaryTextColor': '#fff', 'lineColor': '#6b7280'}}}%%
 
-%%
-  SupplyShield Use Case Diagram
-  Actors: Supply Chain Analyst, SupplyShield Agent, Elasticsearch
-%%
+
 
 flowchart TB
     subgraph ACTORS["ACTORS"]
@@ -74,7 +71,7 @@ flowchart TB
     UC4A -->|"<<includes>>"| UC4B
     UC4B -->|"<<includes>>"| UC4C
 
-    classDef actorStyle fill:#7c3aed,stroke:#6d28d9,color:#fff,shape:circle
+    classDef actorStyle fill:#7c3aed,stroke:#6d28d9,color:#fff
     classDef detectionStyle fill:#065f46,stroke:#047857,color:#fff
     classDef assessStyle fill:#1e429f,stroke:#1a56db,color:#fff
     classDef recoveryStyle fill:#92400e,stroke:#d97706,color:#fff

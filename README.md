@@ -4,13 +4,15 @@ Multi-agent supply chain disruption detection and automated recovery, built on E
 
 ## The Problem
 
-Supply chain disruptions are a systemic, quantifiable risk. According to [McKinsey Global Institute (2020)](https://www.mckinsey.com/capabilities/operations/our-insights/risk-resilience-and-rebalancing-in-global-value-chains), companies across most industries can expect supply chain disruptions lasting one month or longer every 3.7 years on average — and over a decade, such disruptions can wipe out the equivalent of nearly one full year of profits.
+Supply chain disruptions are accelerating in both frequency and cost. The [J.S. Held Global Risk Report (2025)](https://www.jsheld.com/insights/articles/global-risk-report-2025) estimates global supply chain disruptions now cost organizations **$184 billion annually**. In 2024, disruptions led to financial losses averaging **8% of annual revenues** per affected company (Procurement Tactics, 2024).
 
-The [Business Continuity Institute's Supply Chain Resilience Report (2023)](https://www.thebci.org/resource/bci-supply-chain-resilience-report-2023.html) found that 73% of organizations experienced at least one supply chain disruption in 2022, and the financial exposure has grown with the complexity of global sourcing.
+The [Business Continuity Institute Supply Chain Resilience Report (2024)](https://www.thebci.org/resource/bci-supply-chain-resilience-report-2024.html) found that **80% of organizations experienced at least one supply chain disruption** in the past 12 months — up from 73% the prior year. Third-party failures were the leading cause (43.6% of incidents), followed by cyberattacks and adverse weather.
 
-[Gartner (2023)](https://www.gartner.com/en/supply-chain/topics/supply-chain-risk-management) identifies supply chain risk management as a top-5 priority for supply chain leaders globally, noting that geopolitical instability, climate events, and single-source dependencies continue to concentrate risk in ways that legacy monitoring tools cannot detect in time.
+[McKinsey's Global Supply Chain Leader Survey (2024)](https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain) found that **90% of supply chain leaders encountered resilience challenges** in 2024. A subsequent McKinsey survey (published January 2026) found that most companies still lack visibility beyond their first-tier suppliers, and that tariffs affected **82% of surveyed supply chains** in 2025, driving a 39% increase in supplier costs.
 
-The core failure isn't information — it's speed. When disruptions are detected, procurement teams face a fragmented response: shipment data in one system, order books in another, supplier records in a third. [APQC's Supply Chain Management benchmarking data](https://www.apqc.org/resource-library/resource-listing/supply-chain-disruption-response-benchmarks) documents an average 3–7 day lag between disruption detection and recovery action initiation in manual workflows.
+[Gartner's Future of Supply Chain 2025 report](https://www.gartner.com/en/supply-chain/topics/supply-chain-risk-management) found that **only 29% of supply chain organizations are adequately prepared** for future disruptions, and that 42% of procurement leaders cited supply disruptions as their primary concern in a June–July 2024 survey.
+
+The core failure isn't information — it's speed. A 2024 global study by [Kinaxis](https://www.kinaxis.com/en/blog/supply-chain-disruption-response) surveying 1,800 supply chain decision-makers found that **83% of supply chains cannot respond to a disruption within 24 hours**, with an **average response time of 5 days**. Shipment data lives in one system, order books in another, supplier records in a third — and coordinating across them manually takes days that supply chains don't have.
 
 ## The Solution
 
@@ -152,9 +154,12 @@ The `lookup` mode setting on `sc_suppliers` and `sc_products` is required for ES
 
 ## References
 
-- McKinsey Global Institute (2020). [Risk, resilience, and rebalancing in global value chains](https://www.mckinsey.com/capabilities/operations/our-insights/risk-resilience-and-rebalancing-in-global-value-chains)
-- Business Continuity Institute (2023). [BCI Supply Chain Resilience Report](https://www.thebci.org/resource/bci-supply-chain-resilience-report-2023.html)
-- Gartner (2023). [Supply Chain Risk Management](https://www.gartner.com/en/supply-chain/topics/supply-chain-risk-management)
+- J.S. Held (2025). [Global Risk Report 2025](https://www.jsheld.com/insights/articles/global-risk-report-2025) — $184B annual disruption cost estimate
+- Business Continuity Institute (2024). [BCI Supply Chain Resilience Report 2024](https://www.thebci.org/resource/bci-supply-chain-resilience-report-2024.html) — 80% of orgs disrupted, third-party failures leading cause
+- McKinsey & Company (2024). [Global Supply Chain Leader Survey](https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain) — 90% of leaders faced resilience challenges
+- McKinsey & Company (January 2026). Supply Chain Risk Outlook — tariffs affecting 82% of supply chains, 39% cost increases
+- Gartner (2025). [Future of Supply Chain 2025](https://www.gartner.com/en/supply-chain/topics/supply-chain-risk-management) — only 29% of orgs prepared; 42% cite disruptions as top concern
+- Kinaxis (2024). [Supply Chain Disruption Response Study](https://www.kinaxis.com/en/resources/report/supply-chain-disruption) — 1,800 decision-makers; 83% can't respond in 24h; avg response = 5 days
 - Elastic (2023). [Improving information retrieval with hybrid search](https://www.elastic.co/blog/improving-information-retrieval-elastic-stack-hybrid)
 - Anthropic / MCP (2024). [Model Context Protocol specification](https://modelcontextprotocol.io/)
 
